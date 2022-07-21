@@ -13,8 +13,9 @@
   </head>
 
   <body class="main-body">
+    <!--див сделан для того, чтобы задать ширину странице-->
     <div class="body-container">
-      <!--див сделан для того, чтобы задать ширину странице-->
+
 
       <header>
         <nav class="navigation">
@@ -38,10 +39,9 @@
               <a class="navigation-user-link">Корзина</a>
             </li>
           </ul>
-
           <button class="button navigation-product-list-button" type="button">Каталог товаров</button>
+          <!--див сделан для выпадающего каталога-->
           <div class="navigation-product-lists">
-            <!--див сделан для выпадающего каталога-->
             <ul class="navigation-product-list">
               <li class="navigation-product-item">Виртуальная реальность</li>
               <li class="navigation-product-item">Фитнес-браслеты</li>
@@ -55,7 +55,6 @@
               <li class="navigation-product-item">Экшн-камеры</li>
             </ul>
           </div>
-
           <ul class="navigation-services-list">
             <li class="navigation-services-item">
               <a class="navigation-services-item-link">Доставка</a>
@@ -69,8 +68,39 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container">
-        <h1 class="visually-hidden">Главная страница интернет-магазина Девайс.</h1>
+
+      <main class="main-index">
+        <h1 class="visually-hidden">Интернет-магазин Девайс.</h1>
+
+        <section class="slider">
+          <h2 class="visually-hidden">Наши товары.</h2>
+          <img class="slider-image" src="" alt="">
+          <button class="slider-button slider-next-button ">
+            <span class="visually-hidden">Следующий товар.</span>
+          </button>
+          <button class="slider-button slider-prev-button ">
+            <span class="visually-hidden">Предыдущий товар.</span>
+          </button>
+
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-current-button">
+                <span class="visually-hidden">1 товар.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button">
+                <span class="visually-hidden">2 товар.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button">
+                <span class="visually-hidden">3 товар.</span>
+              </button>
+            </li>
+          </ol>
+
+        </section>
 
         <section>
           <h2 class="visually-hidden">Каталог товаров.</h2>
@@ -169,21 +199,18 @@
           </section>
 
           <section class="main-contacts">
-
             <h2 class="main-contacts-title">Контакты</h2>
             <p class="main-contacts-text">Вы можете забрать товар сами, заехав в наш офис.
               Заодно сможете проверить работоспособность покупки.
             </p>
-
-
             <h3 class="main-contacts-address-title">Интернет-магазин «Девайс»</h3>
-            <p class="main-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="main-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
+            <address class="main-contacts-address">
+              <p class="main-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <a class="main-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </address>
             <h3 class="main-contacts-address-title">Время работы</h3>
             <p class="main-contacts-text">пн—пт: с 10:00 до 22:00</p>
             <p class="main-contacts-text">сб—вс: с 10:00 до 19:00</p>
-
             <a class="button main-contacts-button" href="mailto:mail@htmlacademy.ru">Напишите нам</a>
           </section>
 
@@ -211,7 +238,9 @@
           <a class="footer-logo-link" href="">
             <img class="navigation-logo" src="" alt="Логотип официального сайта интернет-магазина Device">
           </a>
-          <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <address>
+            <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          </address>
         </section>
 
         <section class="footer-services">
@@ -252,7 +281,9 @@
 
         <section>
           <h2 class="visually-hidden">Контактный телефон.</h2>
-          <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <address>
+            <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          </address>
         </section>
 
         <section class="footer-academy">
