@@ -2,8 +2,8 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-    src: url("fonts/raleway/raleway-800.woff2") format("woff2");
-    font-display: swap;
+  src: url("fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
@@ -26,6 +26,7 @@ body {
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  color: #000000;
   background-color: #FFFFFF;
 }
 
@@ -68,4 +69,33 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+/*product-slider*/
+.product-slider-number {
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.product-slider-slogan {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.product-slider-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+/*main-product*/
+.main-product-title-link {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: none;
 }
