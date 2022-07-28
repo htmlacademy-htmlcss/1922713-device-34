@@ -58,7 +58,7 @@ img {
 /*header*/
 
 .index-header {
-  padding: 0 140px;
+  width: 1160px;
 }
 
 /*navigation*/
@@ -94,7 +94,7 @@ img {
 /*product-slider*/
 
 .product-slider {
-  padding: 0 140px;
+  width: 1160px;
 }
 
 .product-slider-number {
@@ -123,7 +123,7 @@ img {
 /*main-product*/
 
 .main-product {
-  padding: 0 140px;
+  width: 1160px;
 }
 
 .main-product-title-link {
@@ -182,7 +182,7 @@ img {
 /*order*/
 
 .order {
-  padding: 0 140px;
+  width: 1160px;
 }
 
 .order-title {
@@ -199,7 +199,7 @@ img {
 /*index-columns*/
 
 .index-columns {
-  padding: 0 140px;
+  width: 1160px;
 }
 
 /*about-us*/
