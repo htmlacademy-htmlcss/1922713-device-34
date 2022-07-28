@@ -17,7 +17,7 @@
     <div class="body-container">
 
 
-      <header>
+      <header class="index-header">
         <nav class="navigation">
           <a class="navigation-logo-link" href="#">
             <img class="navigation-logo" width="145" height="36" src="images/nav-images/logo-nav.svg"
@@ -84,13 +84,14 @@
           <p class="product-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным под стандартную камеру.</p>
           <a class="button product-slider-button" href="#">Подробнее</a>
-
-          <p class="product-slider-feature-value">800 м</p>
-          <p class="product-slider-feature">Дальность полета</p>
-          <p class="product-slider-feature-value">50 м</p>
-          <p class="product-slider-feature">Радиус поражения</p>
-
-
+          <dl class="product-slider-feature-list">
+            <dd class="product-slider-feature-value">800 м</p>
+            <dt class="product-slider-feature">Дальность полета</dt>
+          </dl>
+          <dl class="product-slider-feature-list">
+            <dd class="product-slider-feature-value">50 м</p>
+            <dt class="product-slider-feature">Радиус поражения</dt>
+          </dl>
 
 
           <h3 class="visually-hidden">Фитнес-браслет.</h3>
@@ -98,52 +99,58 @@
             alt="Пример товара.">
           <p class="product-slider-number">02</p>
           <p class="product-slider-slogan">Худеем правильно!</p>
-          <p class="product-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+          <p class="product-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
+            и
             соблюдать диету.</p>
           <a class="button product-slider-button" href="#">Подробнее</a>
-
-          <p class="product-slider-feature-value">48 часов</p>
-          <p class="product-slider-feature">Без подзарядки</p>
-
+          <dl class="product-slider-feature-list">
+            <dd class="product-slider-feature-value">48 часов</dd>
+            <dt class="product-slider-feature">Без подзарядки</dt>
+          </dl>
 
           <h3 class="visually-hidden">Селфи-палка.</h3>
           <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-3.png"
             alt="Пример товара.">
           <p class="product-slider-number">03</p>
           <p class="product-slider-slogan">Делай селфи,как Бен Стиллер!</p>
-          <p class="product-slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
+          <p class="product-slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+            Карл!)
             метров
             длиной и весом всего 5 кг.</p>
           <a class="button product-slider-button" href="#">Подробнее</a>
+          <dl class="product-slider-feature-list">
+            <dd class="product-slider-feature-value">8,5 м</dd>
+            <dt class="product-slider-feature">Длина палки</dt>
+          </dl>
+          <dl class="product-slider-feature-list">
+            <dd class="product-slider-feature-value">5 кг</dd>
+            <dt class="product-slider-feature">Вес палки</dt>
+          </dl>
+          <dl class="product-slider-feature-list">
+            <dd class="product-slider-feature-value">Карбон</dd>
+            <dt class="product-slider-feature">Материал</dt>
+          </dl>
 
-          <p class="product-slider-feature-value">8,5 м</p>
-          <p class="product-slider-feature">Длина палки</p>
-          <p class="product-slider-feature-value">5 кг</p>
-          <p class="product-slider-feature">Вес палки</p>
-          <p class="product-slider-feature-value">Карбон</p>
-          <p class="product-slider-feature">Материал</p>
-
-
-          <button class="product-slider-button product-slider-next-button ">
+          <button class="product-slider-button product-slider-next-button" type="button">
             <span class="visually-hidden">Следующий товар.</span>
           </button>
-          <button class="product-slider-button product-slider-prev-button ">
+          <button class="product-slider-button product-slider-prev-button" type="button">
             <span class="visually-hidden">Предыдущий товар.</span>
           </button>
 
           <ol class="product-slider-pagination">
             <li class="product-slider-pagination-item">
-              <button class="product-slider-pagination-button product-slider-pagination-current-button">
+              <button class="product-slider-pagination-button product-slider-pagination-current-button" type="button">
                 <span class="visually-hidden">1 товар.</span>
               </button>
             </li>
             <li class="product-slider-pagination-item">
-              <button class="product-slider-pagination-button">
+              <button class="product-slider-pagination-button" type="button">
                 <span class="visually-hidden">2 товар.</span>
               </button>
             </li>
             <li class="product-slider-pagination-item">
-              <button class="product-slider-pagination-button">
+              <button class="product-slider-pagination-button" type="button">
                 <span class="visually-hidden">3 товар.</span>
               </button>
             </li>
@@ -276,7 +283,7 @@
             <label class="visually-hidden" for="email-input">E-mail</label>
             <input class="subscribe-input" id="email-input" name="email-input" type="email" placeholder="Ваш e-mail"
               required>
-            <button class="button subscribe-button">Подписаться</button>
+            <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
           <p class="subscribe-text">Это бесплатно</p>
         </section>
@@ -291,7 +298,7 @@
               alt="Логотип официального сайта интернет-магазина Device">
           </a>
           <address class="footer-address">
-            <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </address>
         </section>
 

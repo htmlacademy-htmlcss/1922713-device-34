@@ -30,6 +30,11 @@ body {
   color: #444444;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .button {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
