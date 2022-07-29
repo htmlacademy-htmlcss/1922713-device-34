@@ -18,17 +18,16 @@
 
 
       <header class="index-header">
-        <a class="navigation-logo-link" href="#">
-          <img class="navigation-logo" width="145" height="36" src="images/nav-images/logo-nav.svg"
+        <a class="index-header-logo-link" href="#">
+          <img class="index-header-logo" width="145" height="36" src="images/nav-images/logo-nav.svg"
             alt="Логотип официального сайта интернет-магазина Device.">
         </a>
         <nav class="navigation">
-
           <form class="navigation-search-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="nav-search-form-input">Форма поиска товара.</label>
-            <input class="nav-search-form-input" id="nav-search-form-input" name="nav-search-form-input" type="text"
-              value="Текст поиска">
-            <button class="nav-search-form-button" type="submit">Найти</button>
+            <input class="navigation-search-form-input" id="nav-search-form-input" name="nav-search-form-input"
+              type="text" value="Текст поиска">
+            <button class="navigation-search-form-button" type="submit">Найти</button>
           </form>
           <ul class="navigation-user">
             <li class="navigation-user-item">
@@ -42,7 +41,7 @@
             </li>
           </ul>
           <!--див сделан для выпадающего каталога-->
-          <div class=" navigation-product-lists">
+          <div class="navigation-product-lists">
             <button class="button navigation-product-list-button" type="button">Каталог товаров</button>
             <!-- <ul class="navigation-product-list">
               <li class="navigation-product-item">Виртуальная реальность</li>
@@ -76,67 +75,42 @@
 
         <section class="product-slider">
           <h2 class="visually-hidden">Наши товары.</h2>
+          <!--див для флексования слайдера-->
+          <div class="slider-item slider-item-current">
+            <h3 class="visually-hidden">Квадрокоптер.</h3>
+            <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-1.png"
+              alt="Пример товара.">
+            <!--див для флексования текстового содержимого слайдера-->
+            <div class="slider-item-text-content">
+              <p class="product-slider-number">01</p>
+              <p class="product-slider-slogan">Порхает как бабочка,жалит как пчела!</p>
+              <p class="product-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.</p>
+              <a class="button product-slider-button" href="#">Подробнее</a>
+              <!--див сделан для флексования группы терминов-->
+              <div class="product-slider-feature-lists">
+                <dl class="product-slider-feature-list">
+                  <dt class="product-slider-feature">Дальность полета</dt>
+                  <dd class="product-slider-feature-value">800 м</dd>
+                </dl>
+                <dl class="product-slider-feature-list">
+                  <dt class="product-slider-feature">Радиус поражения</dt>
+                  <dd class="product-slider-feature-value">50 м</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
 
-          <h3 class="visually-hidden">Квадрокоптер.</h3>
-          <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-1.png"
-            alt="Пример товара.">
-          <p class="product-slider-number">01</p>
-          <p class="product-slider-slogan">Порхает как бабочка,жалит как пчела!</p>
-          <p class="product-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-            замаскированным под стандартную камеру.</p>
-          <a class="button product-slider-button" href="#">Подробнее</a>
-          <dl class="product-slider-feature-list">
-            <dt class="product-slider-feature">Дальность полета</dt>
-            <dd class="product-slider-feature-value">800 м</dd>
-          </dl>
-          <dl class="product-slider-feature-list">
-            <dt class="product-slider-feature">Радиус поражения</dt>
-            <dd class="product-slider-feature-value">50 м</dd>
-          </dl>
 
-          <h3 class="visually-hidden">Фитнес-браслет.</h3>
-          <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-2.png"
-            alt="Пример товара.">
-          <p class="product-slider-number">02</p>
-          <p class="product-slider-slogan">Худеем правильно!</p>
-          <p class="product-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
-            и
-            соблюдать диету.</p>
-          <a class="button product-slider-button" href="#">Подробнее</a>
-          <dl class="product-slider-feature-list">
-            <dt class="product-slider-feature">Без подзарядки</dt>
-            <dd class="product-slider-feature-value">48 часов</dd>
-          </dl>
-
-          <h3 class="visually-hidden">Селфи-палка.</h3>
-          <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-3.png"
-            alt="Пример товара.">
-          <p class="product-slider-number">03</p>
-          <p class="product-slider-slogan">Делай селфи,как Бен Стиллер!</p>
-          <p class="product-slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
-            Карл!)
-            метров
-            длиной и весом всего 5 кг.</p>
-          <a class="button product-slider-button" href="#">Подробнее</a>
-          <dl class="product-slider-feature-list">
-            <dt class="product-slider-feature">Длина палки</dt>
-            <dd class="product-slider-feature-value">8,5 м</dd>
-          </dl>
-          <dl class="product-slider-feature-list">
-            <dt class="product-slider-feature">Вес палки</dt>
-            <dd class="product-slider-feature-value">5 кг</dd>
-          </dl>
-          <dl class="product-slider-feature-list">
-            <dt class="product-slider-feature">Материал</dt>
-            <dd class="product-slider-feature-value">Карбон</dd>
-          </dl>
-
-          <button class="product-slider-button product-slider-next-button" type="button">
-            <span class="visually-hidden">Следующий товар.</span>
-          </button>
-          <button class="product-slider-button product-slider-prev-button" type="button">
-            <span class="visually-hidden">Предыдущий товар.</span>
-          </button>
+          <!--див сделан для флексования кнопок слайдера-->
+          <div class="product-slider-button-container">
+            <button class="product-slider-button product-slider-next-button" type="button">
+              <span class="visually-hidden">Следующий товар.</span>
+            </button>
+            <button class="product-slider-button product-slider-prev-button" type="button">
+              <span class="visually-hidden">Предыдущий товар.</span>
+            </button>
+          </div>
 
           <ol class="product-slider-pagination">
             <li class="product-slider-pagination-item">
