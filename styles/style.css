@@ -51,6 +51,7 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*body*/
@@ -81,6 +82,7 @@ img {
 .navigation {
   display: flex;
   flex-wrap: wrap;
+  background-color: #FFE17F;
 }
 
 .navigation-search-form {
@@ -109,6 +111,11 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.navigation-product-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -197,6 +204,7 @@ img {
 
 .main-product {
   width: 1160px;
+  margin: 0 auto;
 }
 
 .main-product-title-link {
@@ -222,6 +230,12 @@ img {
   background-position: center;
 }
 
+.main-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .main-product-item:nth-of-type(2) .main-product-image-link {
   background-image: url("../images/main-product/product-2.svg");
   background-position: bottom;
@@ -245,6 +259,30 @@ img {
 
 /*main-services*/
 
+.main-services {
+  width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.main-services-slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-services-slider-pagination {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-services-slider-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .main-services-title {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 50px;
@@ -256,6 +294,7 @@ img {
 
 .order {
   width: 1160px;
+  margin: 0 auto;
 }
 
 .order-title {
@@ -273,6 +312,9 @@ img {
 
 .index-columns {
   width: 1160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
 }
 
 /*about-us*/
@@ -318,6 +360,7 @@ img {
 /*subscribe-section*/
 
 .subscribe-section {
+  padding: 0 140px;
   background-color: #F0F0F0;
 }
 
@@ -332,7 +375,16 @@ img {
 /*footer*/
 
 .page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 140px;
   background-color: #444444;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .footer-address {
@@ -347,6 +399,11 @@ img {
   color: #FFFFFF;
 }
 
+.footer-services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-services-button {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -355,4 +412,9 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
 }
