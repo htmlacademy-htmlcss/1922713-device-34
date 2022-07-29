@@ -73,9 +73,16 @@ img {
 
 .index-header {
   width: 1160px;
+  margin: 0 auto;
 }
 
 /*navigation*/
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+
+}
 
 .nav-search-form-input {
   font-family: "Rubik", "Arial", sans-serif;
@@ -257,6 +264,10 @@ img {
 }
 
 /*subscribe-section*/
+
+.subscribe-section {
+  background-color: #F0F0F0;
+}
 
 .subscribe-title {
   font-family: "Raleway", "Arial", sans-serif;
