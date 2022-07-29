@@ -22,8 +22,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   min-width: 1440px;
+  min-height: 100%;
+  margin: 0;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -53,6 +59,11 @@ img {
   width: 1440px;
   margin: 0 auto;
   background-color: #FFFFFF;
+}
+
+/*main*/
+.main-index {
+  flex-grow: 1;
 }
 
 /*header*/
@@ -252,11 +263,30 @@ img {
   color: #000000;
 }
 
+/*footer*/
+
+.page-footer {
+  background-color: #444444;
+}
+
 .footer-address {
+  font-size: 16px;
+  line-height: 20px;
   font-style: normal;
+  color: #FFFFFF;
 }
 
 .footer-phone {
   font-style: normal;
+  color: #FFFFFF;
+}
+
+.footer-services-button {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
   color: #FFFFFF;
 }
