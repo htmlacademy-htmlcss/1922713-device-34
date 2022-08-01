@@ -86,7 +86,30 @@
               <p class="product-slider-slogan">Порхает как бабочка,жалит как пчела!</p>
               <p class="product-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
-              <a class="button product-slider-button" href="#">Подробнее</a>
+
+              <!--див сделан для флексирования управляющей группы элементов слайдера-->
+              <div class="product-slider-control">
+                <a class="button product-slider-button" href="#">Подробнее</a>
+                <ol class="product-slider-pagination">
+                  <li class="product-slider-pagination-item">
+                    <button class="product-slider-pagination-button product-slider-pagination-current-button"
+                      type="button">
+                      <span class="visually-hidden">1 товар.</span>
+                    </button>
+                  </li>
+                  <li class="product-slider-pagination-item">
+                    <button class="product-slider-pagination-button" type="button">
+                      <span class="visually-hidden">2 товар.</span>
+                    </button>
+                  </li>
+                  <li class="product-slider-pagination-item">
+                    <button class="product-slider-pagination-button" type="button">
+                      <span class="visually-hidden">3 товар.</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
+
               <!--див сделан для флексования группы терминов-->
               <div class="product-slider-feature-lists">
                 <dl class="product-slider-feature-list">
@@ -101,7 +124,6 @@
             </div>
           </div>
 
-
           <!--див сделан для флексования кнопок слайдера-->
           <div class="product-slider-button-container">
             <button class="product-slider-button product-slider-next-button" type="button">
@@ -111,24 +133,6 @@
               <span class="visually-hidden">Предыдущий товар.</span>
             </button>
           </div>
-
-          <ol class="product-slider-pagination">
-            <li class="product-slider-pagination-item">
-              <button class="product-slider-pagination-button product-slider-pagination-current-button" type="button">
-                <span class="visually-hidden">1 товар.</span>
-              </button>
-            </li>
-            <li class="product-slider-pagination-item">
-              <button class="product-slider-pagination-button" type="button">
-                <span class="visually-hidden">2 товар.</span>
-              </button>
-            </li>
-            <li class="product-slider-pagination-item">
-              <button class="product-slider-pagination-button" type="button">
-                <span class="visually-hidden">3 товар.</span>
-              </button>
-            </li>
-          </ol>
         </section>
 
         <section class="main-product small-width-container">
@@ -207,17 +211,17 @@
               совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
           <!-- див сделан для флексирования текстового слайдера-->
-          <div class="main-services-slider-item">
+          <!-- <div class="main-services-slider-item">
             <h2 class="main-services-title">Гарантия</h2>
             <p class="main-services-text">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </div>
+          </div> -->
           <!--див сделан для флексирования текстового слайдера-->
-          <div class="main-services-slider-item">
+          <!-- <div class="main-services-slider-item">
             <h2 class="main-services-title">Кредит</h2>
             <p class="main-services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут
               для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          </div>
+          </div> -->
 
         </section>
 
@@ -255,10 +259,10 @@
             <h3 class="main-contacts-subtitle">Время работы</h3>
             <ul class="main-contacts-work-time-list">
               <li class="main-contacts-work-time-item">
-                <p class="main-contacts-text">пн—пт: с 10:00 до 22:00</p>
+                <p class="main-contacts-work-time-text">пн—пт: с 10:00 до 22:00</p>
               </li>
               <li class="main-contacts-work-time-item">
-                <p class="main-contacts-text">сб—вс: с 10:00 до 19:00</p>
+                <p class="main-contacts-work-time-text">сб—вс: с 10:00 до 19:00</p>
               </li>
             </ul>
             <a class="button main-contacts-button" href="mailto:mail@htmlacademy.ru">Напишите нам</a>
@@ -266,9 +270,9 @@
         </div>
 
         <section class="subscribe-section">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <h2 class="subscribe-title">Подпишитесь<br> на рассылку</h2>
+          <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br>
+            длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
 
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="email-input">E-mail</label>
@@ -276,14 +280,14 @@
               required>
             <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
-          <p class="subscribe-text">Это бесплатно</p>
+          <p class="subscribe-information">Это бесплатно</p>
         </section>
 
       </main>
 
       <footer class="page-footer">
 
-        <section class="footer-address">
+        <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты.</h2>
           <a class="footer-logo-link" href="#">
             <img class="navigation-logo" width="145" height="36" src="images/footer-images/logo-footer.svg"

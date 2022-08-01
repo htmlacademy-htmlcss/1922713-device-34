@@ -94,11 +94,11 @@ img {
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  background-color: #FFE17F;
 }
 
 .navigation-search-form {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .navigation-search-form-input {
@@ -159,6 +159,20 @@ img {
 
 /*product-slider*/
 
+.product-slider {
+  position: relative;
+}
+
+/* .product-slider::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  height: 300px;
+  background-color: #FFE17F;
+  z-index: -1;
+} */
+
 .slider-item {
   display: flex;
 }
@@ -170,16 +184,31 @@ img {
 }
 
 .product-slider-number {
+  margin: 0;
   font-weight: 700;
   font-size: 180px;
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
+  color: #000000;
 }
 
 .product-slider-slogan {
+  margin: 0;
+  margin-bottom: 29px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+}
+
+.product-slider-text {
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+.product-slider-control {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 49px;
 }
 
 .product-slider-feature-lists {
@@ -194,6 +223,14 @@ img {
   align-items: flex-start;
   margin: 0;
   padding: 0;
+}
+
+.product-slider-feature-list:first-child {
+  margin-left: 20px;
+}
+
+.product-slider-feature-list:last-child {
+  margin-left: 40px;
 }
 
 .product-slider-feature-value {
@@ -222,6 +259,10 @@ img {
 }
 
 /*main-product*/
+
+.main-product {
+  margin-bottom: 70px;
+}
 
 .main-product-title-link {
   color: #000000;
@@ -289,12 +330,18 @@ img {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.main-services-slider-pagination-item:not(:last-child) {
+  margin-bottom: 35px;
 }
 
 .main-services-slider-item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 452px;
 }
 
 .main-services-title {
@@ -305,6 +352,10 @@ img {
 }
 
 /*order*/
+
+.order {
+  margin-bottom: 70px;
+}
 
 .order-title {
   font-family: "Raleway", "Arial", sans-serif;
@@ -320,6 +371,7 @@ img {
 /*index-columns*/
 
 .index-columns {
+  margin-bottom: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -327,6 +379,7 @@ img {
 /*about-us*/
 
 .about-us-title {
+  margin-bottom: 48px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -334,8 +387,13 @@ img {
   color: #000000;
 }
 
+.about-us-text {
+  margin-bottom: 30px;
+}
+
 .about-us-list {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   font-weight: 700;
   line-height: 20px;
@@ -343,9 +401,14 @@ img {
   letter-spacing: -0.02em;
 }
 
+.about-us-item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
 /*main-contacts*/
 
 .main-contacts-title {
+  margin-bottom: 48px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -353,13 +416,23 @@ img {
   color: #000000;
 }
 
+.main-contacts-text {
+  margin-bottom: 30px;
+}
+
 .main-contacts-subtitle {
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 24px;
 }
 
 .main-contacts-address {
+  margin-bottom: 30px;
   font-style: normal;
+}
+
+.main-contacts-address-text {
+  margin: 0;
 }
 
 .main-contacts-phone {
@@ -368,23 +441,43 @@ img {
 
 .main-contacts-work-time-list {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   list-style-type: none;
+}
+
+.main-contacts-work-time-text {
+  margin: 0;
 }
 
 /*subscribe-section*/
 
 .subscribe-section {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 140px;
   background-color: #F0F0F0;
 }
 
 .subscribe-title {
+  margin-top: 64px;
+  margin-right: 252px;
+  margin-bottom: 144px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+}
+
+.subscribe-text {
+  margin-top: 74px;
+  margin-bottom: 144px;
+}
+
+.subscribe-form {
+  margin-right: auto;
+  margin-bottom: 56px;
 }
 
 /*footer*/
@@ -397,13 +490,17 @@ img {
   background-color: #444444;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.navigation-logo {
+  margin-top: 62px;
+  margin-bottom: 35px;
+}
+
+.footer-contacts {
+  margin-right: 119px;
 }
 
 .footer-address {
+  margin-bottom: 148px;
   width: 239px;
   font-size: 16px;
   line-height: 20px;
@@ -414,6 +511,20 @@ img {
 .footer-phone {
   font-style: normal;
   color: #FFFFFF;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-container:first-of-type {
+  margin: 137px 183px 61px 0;
+}
+
+.footer-container:last-of-type {
+  margin: 140px 0 65px;
 }
 
 .footer-services-list {
