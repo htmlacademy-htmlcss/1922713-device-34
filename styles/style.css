@@ -44,6 +44,8 @@ img {
 }
 
 .button {
+  position: relative;
+  min-height: 40px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -53,6 +55,18 @@ img {
   text-decoration: none;
   cursor: url("../images/cursor-finger.svg") 2 2,
     pointer;
+  z-index: 0;
+}
+
+.button-line-through::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
 }
 
 .visually-hidden {
@@ -109,27 +123,39 @@ img {
   z-index: -1;
 }
 
-
+.index-header-logo {
+  margin-top: 20px;
+  margin-left: 60px;
+}
 
 .navigation-search-form {
   display: flex;
+  margin-right: 53px;
   margin-bottom: 30px;
 }
 
 .navigation-search-form-input {
   width: 359px;
+  padding: 10px 10px 10px 48px;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
 }
 
 .navigation-search-form-button {
   width: 160px;
+  padding: 10px 56px;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 0 50px 50px 0;
 }
 
 .navigation-product-lists {
