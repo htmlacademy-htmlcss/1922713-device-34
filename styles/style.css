@@ -44,18 +44,21 @@ img {
 }
 
 .button {
+  display: inline-block;
   position: relative;
-  min-height: 40px;
   font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   color: #000000;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
   cursor: url("../images/cursor-finger.svg") 2 2,
     pointer;
   z-index: 0;
+  background-color: transparent;
 }
 
 .button-line-through::after {
@@ -124,6 +127,7 @@ img {
 }
 
 .index-header-logo {
+  display: block;
   margin-top: 20px;
   margin-left: 60px;
 }
@@ -136,11 +140,17 @@ img {
 
 .navigation-search-form-input {
   width: 359px;
-  padding: 10px 10px 10px 48px;
+  height: 40px;
+  padding: 8px 10px 8px 48px;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  background-color: transparent;
+  background-image: url("../images/nav-images/loop.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center left 16px;
   box-sizing: border-box;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
@@ -148,7 +158,7 @@ img {
 
 .navigation-search-form-button {
   width: 160px;
-  padding: 10px 56px;
+  padding: 8px 56px;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -156,6 +166,7 @@ img {
   box-sizing: border-box;
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
+  background-color: transparent;
 }
 
 .navigation-product-lists {
@@ -173,6 +184,14 @@ img {
   flex-wrap: wrap;
 }
 
+.navigation-product-list-button {
+  padding: 15px 57px 15px 0;
+  background-image: url("../images/nav-images/plus.svg");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center right 7px;
+}
+
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
@@ -184,8 +203,30 @@ img {
 }
 
 .navigation-user-link {
+  padding-left: 27px;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-user-item:nth-of-type(1) .navigation-user-link {
+  background-image: url("../images/nav-images/man.svg");
+  background-size: 13px 12px;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.navigation-user-item:nth-of-type(2) .navigation-user-link {
+  background-image: url("../images/nav-images/graph.svg");
+  background-size: 10px 12px;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.navigation-user-item:nth-of-type(3) .navigation-user-link {
+  background-image: url("../images/nav-images/basket.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 .navigation-services-list {
@@ -286,6 +327,12 @@ img {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.product-slider-pagination-button {
+  border: none;
+  background-color: transparent;
 }
 
 /*main-product*/
@@ -388,6 +435,27 @@ img {
   width: 452px;
 }
 
+.main-services-slider-item:nth-of-type(1) {
+  background-image: url("../images/main-services/delivery.svg");
+  background-size: 136px 164px;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.main-services-slider-item:nth-of-type(2) {
+  background-image: url("../images/main-services/warranty.svg");
+  background-size: 171px 195px;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.main-services-slider-item:nth-of-type(3) {
+  background-image: url("../images/main-services/credit.svg");
+  background-size: 156px 188px;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
 .main-services-title {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 50px;
@@ -399,9 +467,14 @@ img {
 
 .order {
   margin-bottom: 70px;
+  background-color: #F0F0F0;
+
 }
 
 .order-title {
+  position: relative;
+  margin: 0;
+  padding: 39px 125px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -410,6 +483,22 @@ img {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  z-index: 0;
+}
+
+.order-title::before {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 101px;
+  left: 0;
+  bottom: 0;
+  background-color: #FFE17F;
+  background-image: url("../images/main-images/truck.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 47px 31px;
+  z-index: 1;
 }
 
 /*index-columns*/
@@ -443,6 +532,15 @@ img {
   line-height: 20px;
   color: #000000;
   letter-spacing: -0.02em;
+}
+
+.about-us-item {
+  padding-left: 38px;
+  background-image: url("../images/main-images/about-us-list-image.svg");
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  list-style-type: none;
 }
 
 .about-us-item:not(:last-child) {
@@ -524,6 +622,15 @@ img {
   margin-bottom: 56px;
 }
 
+.subscribe-information {
+  margin: 0;
+  padding-left: 30px;
+  background-image: url("../images/main-images/tick.svg");
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: left top 9px;
+}
+
 /*footer*/
 
 .page-footer {
@@ -534,9 +641,8 @@ img {
   background-color: #444444;
 }
 
-.navigation-logo {
-  margin-top: 62px;
-  margin-bottom: 35px;
+.footer-logo {
+  display: block;
 }
 
 .footer-contacts {
