@@ -618,8 +618,24 @@ img {
 }
 
 .subscribe-form {
+  display: flex;
   margin-right: auto;
   margin-bottom: 56px;
+}
+
+.subscribe-input {
+  padding: 11px 447px 14px 17px;
+  font-family: "Rubik", "Arial", sans-serif;
+  line-height: 30px;
+  color: rgba(68, 68, 68, 0.5);
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+}
+
+.subscribe-button {
+  padding: 18px 39px;
+  border: 3px solid #C4C4C4;
 }
 
 .subscribe-information {
@@ -641,12 +657,23 @@ img {
   background-color: #444444;
 }
 
-.footer-logo {
-  display: block;
+.footer-contacts {
+  position: relative;
+  margin-top: 62px;
+  margin-right: 10px;
 }
 
-.footer-contacts {
-  margin-right: 119px;
+.footer-contacts::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 35px;
 }
 
 .footer-address {
@@ -659,6 +686,10 @@ img {
 }
 
 .footer-phone {
+  margin-bottom: 63px;
+}
+
+.footer-phone-link {
   font-style: normal;
   color: #FFFFFF;
 }
