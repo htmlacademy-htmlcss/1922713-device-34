@@ -183,7 +183,7 @@ img {
   display: flex;
   margin-right: 23px;
   margin-bottom: 28px;
-  margin-left: 61px;
+  margin-left: 59px;
 }
 
 .navigation-search-form-input {
@@ -250,7 +250,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 51px 0 60px;
+  margin: 0 51px 0 58px;
   padding: 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -316,7 +316,6 @@ img {
   width: 497px;
   margin: 0;
   margin-top: 6px;
-  margin-left: 1px;
   padding: 0;
   list-style-type: none;
 }
@@ -427,7 +426,6 @@ img {
   display: block;
   margin-top: -82px;
   margin-right: 40px;
-  margin-left: 1px;
 }
 
 .product-slider-number {
@@ -650,6 +648,11 @@ img {
   width: 452px;
 }
 
+.main-services-slider-item:nth-of-type(2),
+.main-services-slider-item:nth-of-type(3) {
+  width: 475px;
+}
+
 .main-services-slider-item:nth-of-type(1)::after {
   content: "";
   position: absolute;
@@ -662,14 +665,26 @@ img {
   background-repeat: no-repeat;
 }
 
-.main-services-slider-item:nth-of-type(2) {
+.main-services-slider-item:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  width: 171px;
+  height: 195px;
+  top: 3px;
+  left: 558px;
   background-image: url("../images/main-services/warranty.svg");
   background-size: 171px 195px;
   background-repeat: no-repeat;
   background-position: center right;
 }
 
-.main-services-slider-item:nth-of-type(3) {
+.main-services-slider-item:nth-of-type(3)::after {
+  content: "";
+  position: absolute;
+  width: 156px;
+  height: 188px;
+  top: 3px;
+  left: 558px;
   background-image: url("../images/main-services/credit.svg");
   background-size: 156px 188px;
   background-repeat: no-repeat;
@@ -689,18 +704,17 @@ img {
   margin: 0;
 }
 
-
 /*order*/
 
 .order {
-  margin-bottom: 75px;
+  margin-bottom: 117px;
   background-color: #F0F0F0;
 }
 
 .order-title {
   position: relative;
   margin: 0;
-  padding: 39px 125px;
+  padding: 41px 125px 37px 125px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -733,12 +747,27 @@ img {
   margin-bottom: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 99px;
+  gap: 96px;
 }
 
 /*about-us*/
 
+.about-us {
+  position: relative;
+}
+
+.about-us::before {
+  content: "";
+  position: absolute;
+  width: 84px;
+  height: 7px;
+  left: 0;
+  top: -48px;
+  background-color: #000000;
+}
+
 .about-us-title {
+  margin-top: 0;
   margin-bottom: 48px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -749,12 +778,12 @@ img {
 
 .about-us-text {
   margin-bottom: 30px;
-  padding-right: 23px;
+  padding-right: 25px;
 }
 
 .about-us-list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0;
   font-weight: 700;
   line-height: 20px;
@@ -775,9 +804,28 @@ img {
   margin-bottom: 19px;
 }
 
+.about-us-button {
+  width: 270px
+}
+
 /*main-contacts*/
 
+.main-contacts {
+  position: relative;
+}
+
+.main-contacts::before {
+  content: "";
+  position: absolute;
+  width: 84px;
+  height: 7px;
+  left: 0;
+  top: -48px;
+  background-color: #000000;
+}
+
 .main-contacts-title {
+  margin-top: 0;
   margin-bottom: 48px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -812,13 +860,17 @@ img {
 
 .main-contacts-work-time-list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0;
   list-style-type: none;
 }
 
 .main-contacts-work-time-text {
   margin: 0;
+}
+
+.main-contacts-button {
+  width: 259px;
 }
 
 /*subscribe-section*/
@@ -831,9 +883,7 @@ img {
 }
 
 .subscribe-title {
-  margin-top: 64px;
-  margin-right: 252px;
-  margin-bottom: 144px;
+  margin: 62px 252px 137px 7px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -842,7 +892,7 @@ img {
 }
 
 .subscribe-text {
-  margin-top: 74px;
+  margin-top: 71px;
   margin-bottom: 144px;
 }
 
@@ -853,14 +903,18 @@ img {
 }
 
 .subscribe-input {
-  padding: 11px 447px 14px 17px;
+  width: 524px;
+  padding: 12px 17px 17px 17px;
   font-family: "Rubik", "Arial", sans-serif;
+  font-size: 18px;
   line-height: 30px;
   color: rgba(68, 68, 68, 0.5);
   background-color: transparent;
   border: none;
   border-bottom: 3px solid #C4C4C4;
 }
+
+.subscribe-input:placeholder-shown {}
 
 .subscribe-button {
   padding: 18px 39px;
