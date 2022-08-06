@@ -172,7 +172,7 @@ img {
   content: "";
   position: absolute;
   top: 40px;
-  left: 2px;
+  left: 0;
   width: 100%;
   height: 300px;
   background-color: #FFE17F;
@@ -432,7 +432,7 @@ img {
   display: flex;
   justify-content: end;
   margin: 0;
-  margin-right: 46px;
+  margin-right: 48px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 180px;
@@ -714,7 +714,7 @@ img {
 .order-title {
   position: relative;
   margin: 0;
-  padding: 41px 125px 37px 125px;
+  padding: 41px 125px 37px 129px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -903,21 +903,33 @@ img {
 }
 
 .subscribe-input {
-  width: 524px;
-  padding: 12px 17px 17px 17px;
+  width: 525px;
+  padding: 13px 17px 14px 17px;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: rgba(68, 68, 68, 0.5);
   background-color: transparent;
   border: none;
-  border-bottom: 3px solid #C4C4C4;
 }
 
-.subscribe-input:placeholder-shown {}
+.input-border {
+  position: relative;
+}
+
+.input-border::after {
+  content: "";
+  position: absolute;
+  top: 54px;
+  left: 2px;
+  width: 557px;
+  height: 3px;
+  background-color: #C4C4C4;
+}
 
 .subscribe-button {
-  padding: 18px 39px;
+  width: 253px;
+  padding: 12px 29px 13px 33px;
   border: 3px solid #C4C4C4;
 }
 
@@ -939,7 +951,8 @@ img {
 
 .subscribe-information {
   margin: 0;
-  padding-left: 30px;
+  margin-top: 13px;
+  padding-left: 32px;
   background-image: url("../images/main-images/tick.svg");
   background-size: 14px 14px;
   background-repeat: no-repeat;
@@ -951,20 +964,23 @@ img {
 .page-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 140px;
+  padding: 0 138px 0 140px;
   background-color: #444444;
 }
 
+/*левая часть футера*/
+
 .footer-contacts {
   position: relative;
-  margin-top: 62px;
-  margin-right: 10px;
+  margin-top: 60px;
+  margin-right: 118px;
 }
 
 .footer-contacts::after {
   content: "";
   position: absolute;
+  bottom: 92px;
+  left: 1px;
   width: 80px;
   height: 7px;
   background-color: #FFC700;
@@ -972,7 +988,7 @@ img {
 
 .footer-logo {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   border: 2px solid transparent;
 }
 
@@ -998,10 +1014,13 @@ img {
 }
 
 .footer-phone {
-  margin-bottom: 63px;
+  margin-bottom: 59px;
 }
 
 .footer-phone-link {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   font-style: normal;
   color: #FFFFFF;
   border: 2px solid transparent;
@@ -1024,6 +1043,8 @@ img {
   text-decoration: underline rgba(255, 199, 0, 0.3);
 }
 
+/*контейнер для центральной и правой части футера*/
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -1031,17 +1052,25 @@ img {
 }
 
 .footer-container:first-of-type {
-  margin: 137px 183px 61px 0;
+  margin: 133px 177px 61px 0;
 }
 
 .footer-container:last-of-type {
-  margin: 140px 0 65px;
+  margin: 134px 0 65px;
+}
+
+/*централья часть футера*/
+
+.footer-services {
+  margin-bottom: 19px;
 }
 
 .footer-services-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-services-button {
@@ -1069,8 +1098,8 @@ img {
 }
 
 .footer-services-item {
-  margin-bottom: 35px;
-  margin-right: 35px;
+  margin-bottom: 38px;
+  margin-right: 27px;
 }
 
 .footer-services-item:last-child {
@@ -1085,6 +1114,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -1141,4 +1172,10 @@ img {
 
 .footer-social-item .footer-social-item-link:active {
   opacity: 0.3;
+}
+
+/*правая часть футера*/
+
+.footer-academy-link {
+  margin-left: 62px;
 }
