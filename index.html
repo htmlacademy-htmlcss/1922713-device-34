@@ -18,17 +18,20 @@
 
       <!--small-width-container создан для задания секциям меньшей, чем у бади, ширины. ну и центрирования-->
       <header class="index-header small-width-container">
-        <a class="index-header-logo-link" title="Мы на этой странице.">
-          <img class="index-header-logo" width="145" height="36" src="images/nav-images/logo-nav.svg"
-            alt="Логотип официального сайта интернет-магазина Device.">
-        </a>
+
         <nav class="navigation">
+          <a class="index-header-logo-link" title="Мы на этой странице.">
+            <img class="index-header-logo" width="145" height="36" src="images/nav-images/logo-nav.svg"
+              alt="Логотип официального сайта интернет-магазина Device.">
+          </a>
           <form class="navigation-search-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="nav-search-form-input">Форма поиска товара.</label>
             <input class="navigation-search-form-input" id="nav-search-form-input" name="nav-search-form-input"
-              type="text" value="Текст поиска">
+              type="text" placeholder="Текст поиска">
             <button class="navigation-search-form-button" type="submit">Найти</button>
           </form>
+
+
           <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">Войти</a>
@@ -40,23 +43,45 @@
               <a class="navigation-user-link" href="#">Корзина</a>
             </li>
           </ul>
-          <!--див сделан для выпадающего каталога-->
-          <div class="navigation-product-lists">
-            <button class="button navigation-product-list-button" type="button">Каталог товаров</button>
-            <!-- <ul class="navigation-product-list">
-              <li class="navigation-product-item">Виртуальная реальность</li>
-              <li class="navigation-product-item">Фитнес-браслеты</li>
-              <li class="navigation-product-item">Квадрокоптеры</li>
-            </ul>
-            <ul class="navigation-product-list">
-              <li class="navigation-product-item">Моноподы для cелфи</li>
-              <li class="navigation-product-item">Умные часы</li>
-            </ul>
-            <ul class="navigation-product-list">
-              <li class="navigation-product-item">Экшн-камеры</li>
-            </ul> -->
-          </div>
+
           <ul class="navigation-services-list">
+            <li class="navigation-services-item">
+              <a class="button navigation-services-list-button" href="#">Каталог товаров</a>
+
+              <ul class="navigation-services-sublist">
+
+                <li class="">
+                  <ul class="navigation-services-sublist-list">
+                    <li class="">
+                      <a class="navigation-services-sublist-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="">
+                      <a class="navigation-services-sublist-link" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="">
+                      <a class="navigation-services-sublist-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="">
+                  <ul class="navigation-services-sublist-list">
+                    <li class="">
+                      <a class="navigation-services-sublist-link" href="#">Моноподы для cелфи</a>
+                    </li>
+                    <li class="">
+                      <a class="navigation-services-sublist-link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="">
+                  <a class="navigation-services-sublist-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+
+            </li>
+
             <li class="navigation-services-item">
               <a class="button navigation-services-button" href="#">Доставка</a>
             </li>
@@ -76,12 +101,12 @@
         <section class="product-slider small-width-container">
           <h2 class="visually-hidden">Наши товары.</h2>
           <!--див для флексования слайдера-->
-          <div class="slider-item slider-item-current">
+          <div class="product-slider-item product-slider-item-current">
             <h3 class="visually-hidden">Квадрокоптер.</h3>
             <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-1.png"
               alt="Пример товара.">
             <!--див для флексования текстового содержимого слайдера-->
-            <div class="slider-item-text-content">
+            <div class="product-slider-item-text-content">
               <p class="product-slider-number">01</p>
               <p class="product-slider-slogan">Порхает как бабочка, жалит как пчела!</p>
               <p class="product-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
@@ -90,7 +115,7 @@
 
               <!--див сделан для флексирования управляющей группы элементов слайдера-->
               <div class="product-slider-control">
-                <a class="button button-line-through product-slider-button" href="#">Подробнее</a>
+                <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
                 <ol class="product-slider-pagination">
                   <li class="product-slider-pagination-item">
                     <button class="product-slider-pagination-button product-slider-pagination-current-button"
@@ -136,12 +161,12 @@
             </div>
           </div>
           <!--див для флексования слайдера-->
-          <!-- <div class="slider-item">
+          <!-- <div class="product-slider-item">
   <h3 class="visually-hidden">Фитнес-браслет.</h3>
   <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-2.png"
     alt="Пример товара."> -->
           <!--див для флексования текстового содержимого слайдера-->
-          <!-- <div class="slider-item-text-content">
+          <!-- <div class="product-slider-item-text-content">
     <p class="product-slider-number">02</p>
     <p class="product-slider-slogan">Худеем правильно!</p>
     <p class="product-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
@@ -180,12 +205,12 @@
 </div> -->
 
           <!--див для флексования слайдера-->
-          <!-- <div class="slider-item">
+          <!-- <div class="product-slider-item">
   <h3 class="visually-hidden">Селфи-палка.</h3>
   <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-3.png"
     alt="Пример товара."> -->
           <!--див для флексования текстового содержимого слайдера-->
-          <!-- <div class="slider-item-text-content">
+          <!-- <div class="product-slider-item-text-content">
     <p class="product-slider-number">03</p>
     <p class="product-slider-slogan">Делай селфи,как Бен Стиллер!</p>
     <p class="product-slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
