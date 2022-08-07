@@ -205,8 +205,9 @@ img {
   border-radius: 50px 0 0 50px;
 }
 
-.navigation-search-form-input:focus {
-  border: 5px dotted red;
+.navigation-search-container:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .navigation-search-form-input:disabled {
@@ -228,11 +229,6 @@ img {
 }
 
 .navigation-search-form-button:hover {
-  color: #FFFFFF;
-  background-color: #000000;
-}
-
-.navigation-search-form-button:focus {
   color: #FFFFFF;
   background-color: #000000;
 }
@@ -551,6 +547,26 @@ img {
   background-position: center;
 }
 
+.main-product-image-link:hover {
+  background-color: #FFC700;
+}
+
+.main-product-item:focus-within {
+  outline: 2px solid #AF4FFF;
+}
+
+.main-product-image-link:focus {
+  outline: none;
+}
+
+.main-product-title-link:focus {
+  outline: none;
+}
+
+.main-product-item:active {
+  opacity: 0.3;
+}
+
 .main-product-list {
   display: flex;
   flex-wrap: wrap;
@@ -594,7 +610,7 @@ img {
 .main-services::before {
   content: "";
   position: absolute;
-  top: 45px;
+  top: 96px;
   left: -140px;
   width: 1440px;
   height: 289px;
@@ -796,7 +812,7 @@ img {
   background-image: url("../images/main-images/about-us-list-image.svg");
   background-size: 8px 8px;
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: center left 3px;
   list-style-type: none;
 }
 
@@ -913,6 +929,15 @@ img {
   border: none;
 }
 
+.subscribe-input:not(:placeholder-shown) {
+  color: #444444;
+}
+
+.subscribe-input:focus {
+  background-color: #FFFFFF;
+  outline: none;
+}
+
 .input-border {
   position: relative;
 }
@@ -949,6 +974,10 @@ img {
   border: 3px solid #000000;
 }
 
+.subscribe-button:disabled {
+  opacity: 0.3;
+}
+
 .subscribe-information {
   margin: 0;
   margin-top: 13px;
@@ -962,33 +991,21 @@ img {
 /*footer*/
 
 .page-footer {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0 138px 0 140px;
   background-color: #444444;
 }
 
+.footer-container {
+  display: grid;
+  grid-template-columns: 239px 1fr 178px;
+}
+
 /*левая часть футера*/
-
-.footer-contacts {
-  position: relative;
-  margin-top: 60px;
-  margin-right: 118px;
-}
-
-.footer-contacts::after {
-  content: "";
-  position: absolute;
-  bottom: 92px;
-  left: 1px;
-  width: 80px;
-  height: 7px;
-  background-color: #FFC700;
-}
 
 .footer-logo {
   display: block;
-  margin-bottom: 34px;
+  margin-top: 60px;
+  margin-bottom: 33px;
   border: 2px solid transparent;
 }
 
@@ -997,6 +1014,7 @@ img {
 }
 
 .footer-logo:focus {
+  outline: none;
   border: 2px solid #AF4FFF;
 }
 
@@ -1004,17 +1022,152 @@ img {
   opacity: 0.3;
 }
 
+.footer-contacts {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position: relative;
+
+}
+
+.footer-contacts::after {
+  content: "";
+  position: absolute;
+  bottom: -71px;
+  left: 1px;
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+}
+
 .footer-address {
-  margin-bottom: 148px;
-  width: 239px;
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
   color: #FFFFFF;
 }
 
+/*централья часть футера*/
+
+.footer-services {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  padding-left: 118px;
+}
+
+.footer-services-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-services-button {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer-services-button:hover {
+  color: #FFC700;
+  border-bottom: 2px solid #FFC700;
+}
+
+.footer-services-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.footer-services-button:active {
+  color: rgba(255, 199, 0, 0.3);
+  border-bottom: 2px solid rgba(255, 199, 0, 0.3);
+}
+
+.footer-services-item:not(:last-child) {
+  margin-right: 27px;
+}
+
+.footer-social {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  padding-top: 47px;
+  padding-right: 62px;
+}
+
+.footer-social-list {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-item-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.footer-social-item {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-social-item:hover {
+  background-color: #FFC700;
+}
+
+.footer-social-item:active {
+  background-color: #FFC700;
+}
+
+.footer-social-item .footer-social-item-link:active {
+  opacity: 0.3;
+}
+
+.footer-social-item:last-child {
+  margin-right: 0;
+}
+
+.footer-social-item:nth-child(1) .footer-social-item-link {
+  background-image: url("../images/footer-images/telegram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 12px;
+}
+
+.footer-social-item:nth-child(2) .footer-social-item-link {
+  background-image: url("../images/footer-images/youtube.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 11px;
+}
+
+.footer-social-item:nth-child(3) .footer-social-item-link {
+  background-image: url("../images/footer-images/twitter.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px 14px;
+}
+
+/*правая часть футера*/
+
 .footer-phone {
-  margin-bottom: 59px;
+  grid-row: 1/2;
+  grid-column: 3/4;
 }
 
 .footer-phone-link {
@@ -1043,139 +1196,23 @@ img {
   text-decoration: underline rgba(255, 199, 0, 0.3);
 }
 
-/*контейнер для центральной и правой части футера*/
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.footer-academy {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  padding-top: 50px;
+  padding-left: 61px;
 }
 
-.footer-container:first-of-type {
-  margin: 133px 177px 61px 0;
+.footer-academy-link {}
+
+.footer-academy-link:focus {
+  outline: 1px solid #AF4FFF;
 }
 
-.footer-container:last-of-type {
-  margin: 134px 0 65px;
+.footer-academy-image:hover {
+  fill: #FFFFFF;
 }
 
-/*централья часть футера*/
-
-.footer-services {
-  margin-bottom: 19px;
-}
-
-.footer-services-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-services-button {
-  font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-.footer-services-button:hover {
-  color: #FFC700;
-  border-bottom: 2px solid #FFC700;
-}
-
-.footer-services-button:focus {
-  border: 2px solid #AF4FFF;
-}
-
-.footer-services-button:active {
-  color: rgba(255, 199, 0, 0.3);
-  border-bottom: 2px solid rgba(255, 199, 0, 0.3);
-}
-
-.footer-services-item {
-  margin-bottom: 38px;
-  margin-right: 27px;
-}
-
-.footer-services-item:last-child {
-  margin-right: 0;
-}
-
-.footer-social {
-  width: 444px;
-}
-
-.footer-social-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.footer-social-item-link {
-  display: block;
-  width: 40px;
-  height: 40px;
-}
-
-.footer-social-item {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  margin-right: 15px;
-  margin-bottom: 15px;
-}
-
-.footer-social-item:hover {
-  background-color: #FFC700;
-}
-
-.footer-social-item:focus {
-  background-color: #FFC700;
-}
-
-.footer-social-item:active {
-  background-color: #FFC700;
-}
-
-.footer-social-item:last-child {
-  margin-right: 0;
-}
-
-.footer-social-item:nth-child(1) .footer-social-item-link {
-  background-image: url("../images/footer-images/telegram.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 14px 12px;
-}
-
-.footer-social-item:nth-child(2) .footer-social-item-link {
-  background-image: url("../images/footer-images/youtube.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 16px 11px;
-}
-
-.footer-social-item:nth-child(3) .footer-social-item-link {
-  background-image: url("../images/footer-images/twitter.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 15px 14px;
-}
-
-.footer-social-item .footer-social-item-link:active {
-  opacity: 0.3;
-}
-
-/*правая часть футера*/
-
-.footer-academy-link {
-  margin-left: 62px;
+.footer-academy-image:active {
+  fill: rgba(255, 255, 255, 0.3);
 }
