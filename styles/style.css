@@ -136,26 +136,30 @@ img {
 
 .index-header-logo-link {
   display: block;
+  width: 145px;
+  height: 36px;
+  margin-top: 19px;
+  margin-right: 500px;
+  margin-bottom: 30px;
+  margin-left: 59px;
+  cursor: pointer;
 }
 
 .index-header-logo {
   display: block;
-  margin-top: 17px;
-  margin-right: 500px;
-  margin-bottom: 28px;
-  margin-left: 59px;
-  border: 2px solid transparent;
+  width: 145px;
+  height: 36px;
 }
 
-.index-header-logo:hover {
+.index-header-logo-link:hover {
   opacity: 0.6;
 }
 
-.index-header-logo:focus {
-  border: 2px solid #AF4FFF;
+.index-header-logo-link:focus {
+  outline: 2px solid #AF4FFF;
 }
 
-.index-header-logo:active {
+.index-header-logo-link:active {
   opacity: 0.3;
 }
 
@@ -874,6 +878,21 @@ img {
   color: #444444;
 }
 
+.main-contacts-phone:hover {
+  color: #FFC700;
+  text-decoration: underline #FFC700;
+}
+
+.main-contacts-phone:focus {
+  text-decoration: none;
+  outline: 2px solid #AF4FFF;
+}
+
+.main-contacts-phone:active {
+  color: rgba(255, 199, 0, 0.3);
+  text-decoration: underline rgba(255, 199, 0, 0.3);
+}
+
 .main-contacts-work-time-list {
   margin: 0;
   margin-bottom: 27px;
@@ -1004,21 +1023,25 @@ img {
 
 .footer-logo {
   display: block;
-  margin-top: 60px;
-  margin-bottom: 33px;
-  border: 2px solid transparent;
 }
 
-.footer-logo:hover {
+.footer-logo-link {
+  display: block;
+  width: 145px;
+  height: 36px;
+  margin-top: 62px;
+  margin-bottom: 35px;
+}
+
+.footer-logo-link:hover {
   opacity: 0.6;
 }
 
-.footer-logo:focus {
-  outline: none;
-  border: 2px solid #AF4FFF;
+.footer-logo-link:focus {
+  outline: 2px solid #AF4FFF;
 }
 
-.footer-logo:active {
+.footer-logo-link:active {
   opacity: 0.3;
 }
 
@@ -1026,7 +1049,6 @@ img {
   grid-row: 1/2;
   grid-column: 1/2;
   position: relative;
-
 }
 
 .footer-contacts::after {
@@ -1202,8 +1224,6 @@ img {
   padding-top: 50px;
   padding-left: 61px;
 }
-
-.footer-academy-link {}
 
 .footer-academy-link:focus {
   outline: 1px solid #AF4FFF;
