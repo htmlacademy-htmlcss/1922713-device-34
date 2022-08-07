@@ -518,12 +518,20 @@ img {
   list-style-type: none;
 }
 
-/* .product-slider-pagination-item:nth-child(2) {
-  padding-right: 12px;
-} */
-
 .product-slider-pagination-button {
   border: none;
+}
+
+.product-slider-pagination-button:hover {
+  opacity: 0.6;
+}
+
+.product-slider-pagination-item:focus-within {
+  outline: 2px solid #AF4FFF;
+}
+
+.product-slider-pagination-button:active {
+  opacity: 0.3;
 }
 
 /*main-product*/
