@@ -532,12 +532,12 @@ img {
   margin-bottom: 70px;
 }
 
-.main-product-title-link {
-  color: #000000;
+.main-product-link {
   text-decoration: none;
 }
 
 .main-product-title {
+  color: #000000;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -545,7 +545,7 @@ img {
   letter-spacing: -0.02em;
 }
 
-.main-product-image-link {
+.main-product-image {
   display: block;
   margin-bottom: 33px;
   width: 160px;
@@ -556,7 +556,7 @@ img {
   background-position: center;
 }
 
-.main-product-image-link:hover {
+.main-product-item:hover .main-product-image {
   background-color: #FFC700;
 }
 
@@ -564,16 +564,14 @@ img {
   outline: 2px solid #AF4FFF;
 }
 
-.main-product-image-link:focus {
-  outline: none;
-}
-
-.main-product-title-link:focus {
-  outline: none;
-}
-
 .main-product-item:active {
   opacity: 0.3;
+}
+
+.main-product-link:focus-visible,
+.main-product-image:focus-visible,
+.main-product-title:focus-visible {
+  outline: none;
 }
 
 .main-product-list {
@@ -585,24 +583,24 @@ img {
   list-style-type: none;
 }
 
-.main-product-item:nth-of-type(2) .main-product-image-link {
+.main-product-item:nth-of-type(2) .main-product-image {
   background-image: url("../images/main-product/product-2.svg");
   background-position: bottom;
 }
 
-.main-product-item:nth-of-type(3) .main-product-image-link {
+.main-product-item:nth-of-type(3) .main-product-image {
   background-image: url("../images/main-product/product-3.svg");
 }
 
-.main-product-item:nth-of-type(4) .main-product-image-link {
+.main-product-item:nth-of-type(4) .main-product-image {
   background-image: url("../images/main-product/product-4.svg");
 }
 
-.main-product-item:nth-of-type(5) .main-product-image-link {
+.main-product-item:nth-of-type(5) .main-product-image {
   background-image: url("../images/main-product/product-5.svg");
 }
 
-.main-product-item:nth-of-type(6) .main-product-image-link {
+.main-product-item:nth-of-type(6) .main-product-image {
   background-image: url("../images/main-product/product-6.svg");
 }
 
@@ -645,6 +643,7 @@ img {
   left: 281px;
   bottom: 10px;
   background-color: #000000;
+  z-index: -1;
 }
 
 .main-services-slider-pagination-item:not(:last-child) {
@@ -662,6 +661,19 @@ img {
   text-align: left;
   width: 280px;
   background-color: #000000;
+}
+
+.current-main-services-slider-button:hover {
+  color: rgba(255, 225, 127, 0.5);
+}
+
+.current-main-services-slider-button:focus {
+  outline: 2px solid #AF4FFF;
+  z-index: 0;
+}
+
+.current-main-services-slider-button:active {
+  color: rgba(255, 225, 127, 0.3);
 }
 
 .main-services-slider-item {
