@@ -97,7 +97,6 @@ img {
   opacity: 0.3;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -132,18 +131,16 @@ img {
 /*header*/
 
 .index-header {
-  margin-bottom: 64px;
+  margin-top: 40px;
+  padding-bottom: 131px;
+  background-color: #FFE17F;
 }
-
-/* .navigation-goods-sublist-container:focus-within > .navigation-goods-container {
-  display: flex;
-} */
 
 .index-header-logo-link {
   display: block;
   width: 145px;
   height: 36px;
-  margin-top: 19px;
+  margin-top: -21px;
   margin-right: 500px;
   margin-bottom: 30px;
   margin-left: 59px;
@@ -174,11 +171,14 @@ img {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  z-index: 0;
+
+
+  /* margin-top: 40px; */
+  /* z-index: 0; */
   /*здесь z-index оставляем, он сделан занижения псевдоэлемента*/
 }
 
-.navigation::after {
+/* .navigation::after {
   content: "";
   position: absolute;
   top: 40px;
@@ -187,7 +187,7 @@ img {
   height: 300px;
   background-color: #FFE17F;
   z-index: -1;
-}
+} */
 
 .navigation-search-form {
   display: flex;
@@ -509,6 +509,7 @@ img {
 
 .product-slider {
   position: relative;
+  margin-top: -67px;
   margin-bottom: 64px;
 }
 
@@ -519,7 +520,7 @@ img {
 .product-slider-item-text-content {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  width: 560px;
 }
 
 .product-slider-image {
@@ -529,13 +530,12 @@ img {
 }
 
 .product-slider-number {
-  display: flex;
-  justify-content: end;
   margin: 0;
-  margin-right: 48px;
+  margin-right: 49px;
   margin-bottom: 10px;
-  font-weight: 700;
+  margin-left: 300px;
   font-size: 180px;
+  font-weight: 700;
   color: #FFFFFF;
 }
 
@@ -1033,36 +1033,28 @@ img {
 /*subscribe-section*/
 
 .subscribe-section {
-  /* display: flex;
-  flex-wrap: wrap; */
+  padding: 53px 140px 56px 140px;
   background-color: #F0F0F0;
 }
 
 .subscribe-section-container {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .subscribe-section-container:nth-of-type(1) {
-  padding: 62px 140px 126px 147px;
-}
-
-.subscribe-section-container:nth-of-type(2) {
-  padding: 0 141px 56px 141px;
+  padding-left: 7px;
+  padding-bottom: 126px;
 }
 
 .subscribe-title {
   margin: 0;
-  margin-right: 252px;
+  padding-top: 10px;
+  padding-right: 252px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-}
-
-.subscribe-text {
-  margin-top: 9px;
 }
 
 .subscribe-form {
