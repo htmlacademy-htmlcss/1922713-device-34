@@ -86,6 +86,7 @@
                 </ul>
               </div>
             </div>
+
             <ul class=" navigation-services-list">
               <li class="navigation-services-item">
                 <a class="button navigation-services-button" href="#">Доставка</a>
@@ -319,7 +320,7 @@
         <section class="main-services small-width-container">
           <h2 class="visually-hidden">Наши услуги.</h2>
 
-          <ol class="main-services-slider-pagination">
+          <ul class="main-services-slider-pagination">
             <li class="main-services-slider-pagination-item">
               <button class="button main-services-slider-button current-main-services-slider-button"
                 type="button">Доставка</button>
@@ -330,7 +331,7 @@
             <li class="main-services-slider-pagination-item">
               <button class="button button-line-through main-services-slider-button" type="button">Кредит</button>
             </li>
-          </ol>
+          </ul>
 
           <!--див сделан для флексирования текстового слайдера-->
           <div class="main-services-slider-item">
@@ -399,19 +400,22 @@
         </div>
 
         <section class="subscribe-section">
-          <h2 class="subscribe-title">Подпишитесь<br> на рассылку</h2>
-          <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br>
-            длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
-
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden input-border" for="email-input">E-mail</label>
-            <div class="input-border">
-              <input class="subscribe-input" id="email-input" name="email-input" type="email" placeholder="Ваш e-mail"
-                required>
-            </div>
-            <button class="button subscribe-button" type="submit">Подписаться</button>
-          </form>
-          <p class="subscribe-information">Это бесплатно</p>
+          <div class="subscribe-section-container">
+            <h2 class="subscribe-title">Подпишитесь<br> на рассылку</h2>
+            <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br>
+              длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
+          </div>
+          <div class="subscribe-section-container">
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden input-border" for="email-input">E-mail</label>
+              <div class="input-border">
+                <input class="subscribe-input" id="email-input" name="email-input" type="email" placeholder="Ваш e-mail"
+                  required>
+              </div>
+              <button class="button subscribe-button" type="submit">Подписаться</button>
+            </form>
+            <p class="subscribe-information">Это бесплатно</p>
+          </div>
         </section>
 
       </main>

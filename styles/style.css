@@ -57,7 +57,6 @@ img {
   border: 2px solid transparent;
   cursor: url("../images/cursor-finger.svg") 2 2,
     pointer;
-  z-index: 0;
   background-color: transparent;
   box-sizing: border-box;
 }
@@ -136,6 +135,10 @@ img {
   margin-bottom: 64px;
 }
 
+/* .navigation-goods-sublist-container:focus-within > .navigation-goods-container {
+  display: flex;
+} */
+
 .index-header-logo-link {
   display: block;
   width: 145px;
@@ -172,6 +175,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   z-index: 0;
+  /*здесь z-index оставляем, он сделан занижения псевдоэлемента*/
 }
 
 .navigation::after {
@@ -262,7 +266,7 @@ img {
   position: relative;
   width: 297px;
   padding: 15px 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .navigation-goods-sublist-button::after {
@@ -275,6 +279,7 @@ img {
   background-image: url("../images/nav-images/plus.svg");
   background-size: 50px 50px;
   background-repeat: no-repeat;
+  z-index: 5;
 }
 
 .navigation-goods-sublist-button:hover::after {
@@ -312,7 +317,7 @@ img {
   line-height: 18px;
   color: #000000;
   background-color: #ffe17f;
-  z-index: 2;
+  z-index: 5;
 }
 
 .navigation-goods-container-close {
@@ -721,6 +726,7 @@ img {
   height: 289px;
   background-color: #F0F0F0;
   z-index: -1;
+  /*оставляем*/
 }
 
 .main-services-slider-pagination {
@@ -768,6 +774,7 @@ img {
 .current-main-services-slider-button:focus {
   outline: 2px solid #AF4FFF;
   z-index: 0;
+  /*здесь z-index для того, чтобы рамка была выше черного разделителя*/
 }
 
 .current-main-services-slider-button:active {
@@ -858,7 +865,7 @@ img {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .order-title::before {
@@ -1026,14 +1033,27 @@ img {
 /*subscribe-section*/
 
 .subscribe-section {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 140px;
+  /* display: flex;
+  flex-wrap: wrap; */
   background-color: #F0F0F0;
 }
 
+.subscribe-section-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscribe-section-container:nth-of-type(1) {
+  padding: 62px 140px 126px 147px;
+}
+
+.subscribe-section-container:nth-of-type(2) {
+  padding: 0 141px 56px 141px;
+}
+
 .subscribe-title {
-  margin: 62px 252px 137px 7px;
+  margin: 0;
+  margin-right: 252px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -1042,14 +1062,12 @@ img {
 }
 
 .subscribe-text {
-  margin-top: 71px;
-  margin-bottom: 144px;
+  margin-top: 9px;
 }
 
 .subscribe-form {
   display: flex;
   margin-right: auto;
-  margin-bottom: 56px;
 }
 
 .subscribe-input {
