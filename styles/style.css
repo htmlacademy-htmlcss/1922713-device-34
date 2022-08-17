@@ -661,6 +661,7 @@ img {
 }
 
 .product-slider-pagination-item {
+  height: 12px;
   margin: 0;
 }
 
@@ -683,8 +684,23 @@ img {
   opacity: 0.6;
 }
 
-.product-slider-pagination-item:focus-within {
+/* .product-slider-pagination-item:focus-within {
   outline: 2px solid #AF4FFF;
+} */
+
+/* .product-slider-pagination-button:focus {
+  outline: 2px solid #AF4FFF;
+} */
+
+.product-slider-pagination-button:focus::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 2px solid #af4fff;
+  outline-offset: 3px;
 }
 
 .product-slider-pagination-button:active {
