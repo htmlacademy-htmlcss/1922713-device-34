@@ -510,14 +510,19 @@ img {
 .product-slider {
   position: relative;
   margin-top: -67px;
-  margin-bottom: 64px;
+  margin-bottom: 70px;
 }
 
 .product-slider-item {
   display: flex;
 }
 
+.product-slider-item-hidden {
+  display: none;
+}
+
 .product-slider-item-text-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 560px;
@@ -526,7 +531,6 @@ img {
 .product-slider-image {
   display: block;
   margin-top: -82px;
-  margin-right: 40px;
 }
 
 .product-slider-number {
@@ -599,22 +603,80 @@ img {
   color: #444444;
 }
 
+.product-slider-container {
+  position: relative;
+  margin-right: 40px;
+}
+
 .product-slider-button-container {
+  position: absolute;
+  top: 129px;
+  left: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 530px;
+}
+
+.product-slider-button {
+  width: 20px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../images/slider-images/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.product-slider-button:hover {
+  opacity: 0.6;
+}
+
+.product-slider-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 1px;
+}
+
+.product-slider-button:active {
+  opacity: 0.3;
+}
+
+.product-slider-button:disabled {
+  opacity: 0.1;
+}
+
+.product-slider-prev-button {
+  transform: rotate(180deg);
 }
 
 .product-slider-pagination {
+  position: relative;
+  bottom: 6px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 7px 0;
   padding: 0;
   list-style-type: none;
 }
 
+.product-slider-pagination-item {
+  margin: 0;
+}
+
+.product-slider-pagination-item:not(:last-child) {
+  margin-right: 20px;
+}
+
 .product-slider-pagination-button {
-  border: none;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .product-slider-pagination-button:hover {
@@ -627,6 +689,10 @@ img {
 
 .product-slider-pagination-button:active {
   opacity: 0.3;
+}
+
+.product-slider-pagination-current-button {
+  background-color: #000000;
 }
 
 /*main-product*/

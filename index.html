@@ -107,11 +107,28 @@
 
         <section class="product-slider small-width-container">
           <h2 class="visually-hidden">Наши товары.</h2>
-          <!--див для флексования слайдера-->
-          <div class="product-slider-item product-slider-item-current">
+
+          <!--див для флексования слайдера, для скрытия слайдер-айтема-->
+          <div class="product-slider-item">
             <h3 class="visually-hidden">Квадрокоптер.</h3>
-            <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-1.png"
-              alt="Пример товара.">
+
+            <!--див сделан для позиционирования кнопок слайдера относительно изображения-->
+            <div class="product-slider-container">
+              <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-1.png"
+                alt="Пример товара.">
+
+              <!--див сделан для флексования и позиционирования кнопок слайдера-->
+              <div class="product-slider-button-container">
+                <button class="product-slider-button product-slider-next-button" type="button">
+                  <span class="visually-hidden">Следующий товар.</span>
+                </button>
+                <button class="product-slider-button product-slider-prev-button" type="button">
+                  <span class="visually-hidden">Предыдущий товар.</span>
+                </button>
+              </div>
+            </div>
+
+
             <!--див для флексования текстового содержимого слайдера-->
             <div class="product-slider-item-text-content">
               <p class="product-slider-number">01</p>
@@ -127,33 +144,34 @@
                   <li class="product-slider-pagination-item">
                     <button class="button product-slider-pagination-button product-slider-pagination-current-button"
                       type="button">
-                      <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12"
+                      <!-- <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12"
                         fill="#000000" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="5" stroke="#000" stroke-width="2" />
-                      </svg>
+                      </svg> -->
                       <span class="visually-hidden">1 товар.</span>
                     </button>
                   </li>
                   <li class="product-slider-pagination-item">
                     <button class="button product-slider-pagination-button" type="button">
-                      <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12"
+                      <!-- <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12"
                         fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="5" stroke="#000" stroke-width="2" />
-                      </svg>
+                      </svg> -->
                       <span class="visually-hidden">2 товар.</span>
                     </button>
                   </li>
                   <li class="product-slider-pagination-item">
                     <button class="button product-slider-pagination-button" type="button">
-                      <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12"
+                      <!-- <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12"
                         fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="6" cy="6" r="5" stroke="#000" stroke-width="2" />
-                      </svg>
+                      </svg> -->
                       <span class="visually-hidden">3 товар.</span>
                     </button>
                   </li>
                 </ol>
               </div>
+
               <!--див сделан для флексования группы терминов-->
               <div class="product-slider-feature-lists">
                 <dl class="product-slider-feature-list">
@@ -167,112 +185,137 @@
               </div>
             </div>
           </div>
-          <!--див для флексования слайдера-->
-          <!-- <div class="product-slider-item">
-  <h3 class="visually-hidden">Фитнес-браслет.</h3>
-  <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-2.png"
-    alt="Пример товара."> -->
-          <!--див для флексования текстового содержимого слайдера-->
-          <!-- <div class="product-slider-item-text-content">
-    <p class="product-slider-number">02</p>
-    <p class="product-slider-slogan">Худеем правильно!</p>
-    <p class="product-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
-      занятия и соблюдать диету.</p> -->
-
-          <!--див сделан для флексирования управляющей группы элементов слайдера-->
-          <!-- <div class="product-slider-control">
-      <a class="button button-line-through product-slider-button" href="#">Подробнее</a>
-      <ol class="product-slider-pagination">
-        <li class="product-slider-pagination-item">
-          <button class="product-slider-pagination-button product-slider-pagination-current-button" type="button">
-            <span class="visually-hidden">1 товар.</span>
-          </button>
-        </li>
-        <li class="product-slider-pagination-item">
-          <button class="product-slider-pagination-button" type="button">
-            <span class="visually-hidden">2 товар.</span>
-          </button>
-        </li>
-        <li class="product-slider-pagination-item">
-          <button class="product-slider-pagination-button" type="button">
-            <span class="visually-hidden">3 товар.</span>
-          </button>
-        </li>
-      </ol>
-    </div> -->
-
-          <!--див сделан для флексования группы терминов-->
-          <!-- <div class="product-slider-feature-lists">
-      <dl class="product-slider-feature-list">
-        <dt class="product-slider-feature">Без подзарядки</dt>
-        <dd class="product-slider-feature-value">48 часов</dd>
-      </dl>
-    </div>
-  </div>
-</div> -->
 
           <!--див для флексования слайдера-->
-          <!-- <div class="product-slider-item">
-  <h3 class="visually-hidden">Селфи-палка.</h3>
-  <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-3.png"
-    alt="Пример товара."> -->
-          <!--див для флексования текстового содержимого слайдера-->
-          <!-- <div class="product-slider-item-text-content">
-    <p class="product-slider-number">03</p>
-    <p class="product-slider-slogan">Делай селфи,как Бен Стиллер!</p>
-    <p class="product-slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
-      Карл!) метров длиной и весом всего 5 кг.</p> -->
-          <!--див сделан для флексирования управляющей группы элементов слайдера-->
-          <!-- <div class="product-slider-control">
-      <a class="button button-line-through product-slider-button" href="#">Подробнее</a>
-      <ol class="product-slider-pagination">
-        <li class="product-slider-pagination-item">
-          <button class="product-slider-pagination-button product-slider-pagination-current-button" type="button">
-            <span class="visually-hidden">1 товар.</span>
-          </button>
-        </li>
-        <li class="product-slider-pagination-item">
-          <button class="product-slider-pagination-button" type="button">
-            <span class="visually-hidden">2 товар.</span>
-          </button>
-        </li>
-        <li class="product-slider-pagination-item">
-          <button class="product-slider-pagination-button" type="button">
-            <span class="visually-hidden">3 товар.</span>
-          </button>
-        </li>
-      </ol>
-    </div> -->
-          <!--див сделан для флексования группы терминов-->
-          <!-- <div class="product-slider-feature-lists">
-      <dl class="product-slider-feature-list">
-        <dt class="product-slider-feature">Длина палки</dt>
-        <dd class="product-slider-feature-value">8,5 м</dd>
-      </dl>
-      <dl class="product-slider-feature-list">
-        <dt class="product-slider-feature">Вес палки</dt>
-        <dd class="product-slider-feature-value">5 кг</dd>
-      </dl>
-      <dl class="product-slider-feature-list">
-        <dt class="product-slider-feature">Материал</dt>
-        <dd class="product-slider-feature-value">Карбон</dd>
-      </dl>
-    </div>
-  </div>
-</div> -->
+          <div class="product-slider-item product-slider-item-hidden">
+            <h3 class="visually-hidden">Фитнес-браслет.</h3>
 
+            <!--див сделан для позиционирования кнопок слайдера относительно изображения-->
+            <div class="product-slider-container">
+              <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-2.png"
+                alt="Пример товара.">
 
+              <!--див сделан для флексования и позиционирования кнопок слайдера-->
+              <div class="product-slider-button-container">
+                <button class="product-slider-button product-slider-next-button" type="button">
+                  <span class="visually-hidden">Следующий товар.</span>
+                </button>
+                <button class="product-slider-button product-slider-prev-button" type="button">
+                  <span class="visually-hidden">Предыдущий товар.</span>
+                </button>
+              </div>
+            </div>
 
+            <!--див для флексования текстового содержимого слайдера-->
+            <div class="product-slider-item-text-content">
+              <p class="product-slider-number">02</p>
+              <p class="product-slider-slogan">Худеем правильно!</p>
+              <p class="product-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+                занятия и соблюдать диету.</p>
 
-          <!--див сделан для флексования кнопок слайдера-->
-          <div class="product-slider-button-container">
-            <button class="product-slider-button product-slider-next-button" type="button">
-              <span class="visually-hidden">Следующий товар.</span>
-            </button>
-            <button class="product-slider-button product-slider-prev-button" type="button">
-              <span class="visually-hidden">Предыдущий товар.</span>
-            </button>
+              <!--див сделан для флексирования управляющей группы элементов слайдера-->
+              <div class="product-slider-control">
+                <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
+                <ol class="product-slider-pagination">
+                  <li class="product-slider-pagination-item">
+                    <button class="product-slider-pagination-button product-slider-pagination-current-button"
+                      type="button">
+                      <span class="visually-hidden">1 товар.</span>
+                    </button>
+                  </li>
+                  <li class="product-slider-pagination-item">
+                    <button class="product-slider-pagination-button" type="button">
+                      <span class="visually-hidden">2 товар.</span>
+                    </button>
+                  </li>
+                  <li class="product-slider-pagination-item">
+                    <button class="product-slider-pagination-button" type="button">
+                      <span class="visually-hidden">3 товар.</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
+
+              <!--див сделан для флексования группы терминов-->
+              <div class="product-slider-feature-lists">
+                <dl class="product-slider-feature-list">
+                  <dt class="product-slider-feature">Без подзарядки</dt>
+                  <dd class="product-slider-feature-value">48 часов</dd>
+                </dl>
+              </div>
+            </div>
           </div>
+
+          <!--див для флексования слайдера-->
+          <div class="product-slider-item product-slider-item-hidden">
+            <h3 class="visually-hidden">Селфи-палка.</h3>
+
+            <!--див сделан для позиционирования кнопок слайдера относительно изображения-->
+            <div class="product-slider-container">
+              <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-3.png"
+                alt="Пример товара.">
+
+              <!--див сделан для флексования и позиционирования кнопок слайдера-->
+              <div class="product-slider-button-container">
+                <button class="product-slider-button product-slider-next-button" type="button">
+                  <span class="visually-hidden">Следующий товар.</span>
+                </button>
+                <button class="product-slider-button product-slider-prev-button" type="button">
+                  <span class="visually-hidden">Предыдущий товар.</span>
+                </button>
+              </div>
+            </div>
+
+            <!--див для флексования текстового содержимого слайдера-->
+            <div class="product-slider-item-text-content">
+              <p class="product-slider-number">03</p>
+              <p class="product-slider-slogan">Делай селфи,как Бен Стиллер!</p>
+              <p class="product-slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+                Карл!) метров длиной и весом всего 5 кг.</p>
+              <!--див сделан для флексирования управляющей группы элементов слайдера-->
+              <div class="product-slider-control">
+                <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
+                <ol class="product-slider-pagination">
+                  <li class="product-slider-pagination-item">
+                    <button class="product-slider-pagination-button product-slider-pagination-current-button"
+                      type="button">
+                      <span class="visually-hidden">1 товар.</span>
+                    </button>
+                  </li>
+                  <li class="product-slider-pagination-item">
+                    <button class="product-slider-pagination-button" type="button">
+                      <span class="visually-hidden">2 товар.</span>
+                    </button>
+                  </li>
+                  <li class="product-slider-pagination-item">
+                    <button class="product-slider-pagination-button" type="button">
+                      <span class="visually-hidden">3 товар.</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
+              <!--див сделан для флексования группы терминов-->
+              <div class="product-slider-feature-lists">
+                <dl class="product-slider-feature-list">
+                  <dt class="product-slider-feature">Длина палки</dt>
+                  <dd class="product-slider-feature-value">8,5 м</dd>
+                </dl>
+                <dl class="product-slider-feature-list">
+                  <dt class="product-slider-feature">Вес палки</dt>
+                  <dd class="product-slider-feature-value">5 кг</dd>
+                </dl>
+                <dl class="product-slider-feature-list">
+                  <dt class="product-slider-feature">Материал</dt>
+                  <dd class="product-slider-feature-value">Карбон</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
         </section>
 
         <section class="main-product small-width-container">
