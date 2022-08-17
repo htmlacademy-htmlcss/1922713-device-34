@@ -514,11 +514,11 @@ img {
 }
 
 .product-slider-item {
-  display: flex;
+  display: none;
 }
 
-.product-slider-item-hidden {
-  display: none;
+.product-slider-item-current {
+  display: flex;
 }
 
 .product-slider-item-text-content {
