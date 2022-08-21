@@ -405,6 +405,10 @@ img {
   margin-right: 18px;
 }
 
+.navigation-user-item:last-of-type {
+  position: relative;
+}
+
 .navigation-user-link {
   padding-left: 27px;
   color: #000000;
@@ -515,6 +519,10 @@ img {
 
 .product-slider-item {
   display: none;
+}
+
+.product-slider-item + .product-slider-item {
+  margin-top: 362px;
 }
 
 .product-slider-item-current {
@@ -1442,4 +1450,160 @@ img {
 
 .footer-academy-image:active {
   fill: rgba(255, 255, 255, 0.3);
+}
+
+/*popover*/
+
+.popover {
+  /* display: none; */
+  position: absolute;
+  top: 34px;
+  right: -78px;
+  z-index: 1;
+  width: 320px;
+  min-height: 134px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #000000;
+  box-sizing: border-box;
+}
+
+.popover::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 153px;
+  width: 14px;
+  height: 6px;
+  background-image: url("../images/popover-images/popover-triangle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navigation-user-link-popover:focus-within + .popover {
+  display: block;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.popover-list {
+  margin: 0;
+  padding: 0;
+
+}
+
+.popover-list-item {
+  position: relative;
+  display: flex;
+  padding: 0 20px;
+}
+
+.popover-list-item + .popover-list-item {
+  border-top: 1px solid #1A1A1A;
+}
+
+.popover-link {
+  display: flex;
+  align-items: center;
+  margin-right: 46px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.popover-link:hover {
+  opacity: 0.6;
+}
+
+.popover-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.popover-link:active {
+  opacity: 0.3;
+}
+
+.popover-image {
+  margin-right: 23px;
+}
+
+.popover-text {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.popover-delete-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 15px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  /* width: 14px; */
+  /* height: 14px; */
+  margin: 0;
+  padding: 0;
+  /* background-image: url("../images/nav-images/cross.svg");*/
+  background-color: transparent;
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+}
+
+.popover-delete-button:hover {
+  opacity: 0.6;
+}
+
+.popover-delete-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.popover-delete-button:active {
+  opacity: 0.3;
+}
+
+.popover-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  background-color: #1A1A1A;
+}
+
+.popover-container-text {
+  margin: 0;
+  padding: 13px 0 11px 0;
+}
+
+.popover-button {
+  width: 280px;
+  margin: 20px;
+  padding: 13px 21px;
+  background-color: #FFFFFF;
+}
+
+.popover-button:hover {
+  background-color: #FFE17F;
+}
+
+.popover-button:focus {
+  opacity: 0.3;
+  outline: 2px solid #AF4FFF;
+}
+
+.popover-button:active {
+  outline: none;
+  opacity: 0.3;
+}
+
+.popover-button:disabled {
+  opacity: 0.3;
 }
