@@ -601,53 +601,57 @@
     <div class="modal-window">
       <!-- <div class="modal-window modal-window-close"> -->
       <div class="order-modal-window">
-        <h2 class="modal-window-title">Доставка под заказ</h2>
+        <h2 class="order-modal-window-title">Доставка под заказ</h2>
 
-        <button class="modal-window-close-button" type="button">
+        <button class="order-modal-window-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
 
-        <form class="modal-window-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="field-group">
-            <label class="modal-window-label" for="name">Ваше имя</label>
-            <input class="modal-window-input" id="name" name="name" type="text" placeholder="Введите имя" required>
+        <form class="order-modal-window-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="order-field-group">
+            <label class="order-modal-window-label" for="name">Ваше имя</label>
+            <input class="order-modal-window-input" id="name" name="name" type="text" placeholder="Введите имя"
+              required>
 
           </div>
 
-          <div class="field-group">
-            <label class="modal-window-label" for="email">Ваш e-mail:</label>
-            <input class="modal-window-input" id="email" name="email" type="text" placeholder="почта" required>
+          <div class="order-field-group">
+            <label class="order-modal-window-label" for="email">Ваш e-mail:</label>
+            <input class="order-modal-window-input order-modal-window-input-error" id="email" name="email" type="text"
+              placeholder="почта" required>
+            <p class="order-modal-window-warning-text">Забавный у вас адрес</p>
           </div>
 
-          <div class="field-group">
-            <label class="modal-window-label" for="product-name">Что нужно привезти:</label>
-            <input class="modal-window-input" id="product-name" name="product-name" type="text"
+          <div class="order-field-group">
+            <label class="order-modal-window-label" for="product-name">Что нужно привезти:</label>
+            <input class="order-modal-window-input" id="product-name" name="product-name" type="text"
               placeholder="В свободной форме" required>
           </div>
 
-          <div class="field-group-quantity">
-            <span class="modal-window-label">
-              <label class="modal-window-label" for="product-quantity">Количество</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  <svg class="tooltip-icon"></svg>
-                </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько
+          <div class="order-field-group-quantity">
+            <span class="order-modal-window-label">
+              <label class="order-modal-window-label" for="product-quantity">Количество</label>
+              <!-- <span class="order-modal-window-tooltip"> -->
+              <button class="order-modal-window-tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                <!-- <svg class="order-modal-window-tooltip-icon"></svg> -->
+              </button>
+              <!-- <span class="order-modal-window-tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти,
+                  сколько
                   нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
-              </span>
-            </span>
+              </span> -->
+              <!-- </span> -->
 
-            <button class="modal-window-minus-button" type="button">
-              <span class="visually-hidden">Уменьшить количество товара.</span>
-            </button>
-            <input class="modal-window-input" id="product-quantity" name="product-quantity" type="number" min="1"
-              max="1000" placeholder="1">
-            <button class="modal-window-plus-button" type="button">
-              <span class="visually-hidden">Увеличить количество товара.</span>
-            </button>
+              <button class="order-modal-window-minus-button" type="button">
+                <span class="visually-hidden">Уменьшить количество товара.</span>
+              </button>
+              <input class="order-modal-window-input" id="product-quantity" name="product-quantity" type="number"
+                min="1" max="1000" placeholder="1">
+              <button class="order-modal-window-plus-button" type="button">
+                <span class="visually-hidden">Увеличить количество товара.</span>
+              </button>
           </div>
 
-          <button class="button submit-button" type="submit">Отправить</button>
+          <button class="button button-line-through order-modal-window-button" type="submit">Отправить</button>
 
         </form>
       </div>
