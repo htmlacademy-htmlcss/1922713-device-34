@@ -1664,7 +1664,7 @@ img {
   position: relative;
   width: 920px;
   margin: auto;
-  padding: 61px 61px 72px 71px;
+  padding: 0 61px 0 71px;
   background-color: #FFFFFF;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -1673,8 +1673,8 @@ img {
 
 .order-modal-window-close-button {
   position: absolute;
-  top: 72px;
-  right: 69px;
+  top: 74px;
+  right: 70px;
   width: 26px;
   height: 26px;
   padding: 0;
@@ -1699,7 +1699,7 @@ img {
 }
 
 .order-modal-window-title {
-  margin: 0 0 42px 0;
+  margin: 62px 0 42px 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -1708,10 +1708,13 @@ img {
 }
 
 .order-modal-window-form {
-  display: grid;
+  /* display: grid;
   grid-template-rows: 1fr 1fr 40px;
   grid-template-columns: repeat(4, 180px);
-  grid-gap: 42px 20px;
+  grid-gap: 42px 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 62px;
 }
 
 .order-field-group {
@@ -1723,25 +1726,29 @@ img {
 }
 
 .order-field-group:nth-child(1) {
-  grid-row: 1/2;
-  grid-column: 1/3;
+  /* grid-row: 1/2;
+  grid-column: 1/3; */
+  margin-right: 40px;
 }
 
-.order-field-group:nth-child(2) {
+/* .order-field-group:nth-child(2) {
   grid-row: 1/2;
   grid-column: 3/5;
-}
+}*/
 
 .order-field-group:nth-child(3) {
-  grid-row: 2/3;
-  grid-column: 1/4;
+  /* grid-row: 2/3;
+  grid-column: 1/4; */
   width: 540px;
+  margin-right: 40px;
+  margin-bottom: 37px;
 }
 
 .order-field-group:nth-child(4) {
-  grid-row: 2/3;
-  grid-column: 4/5;
+  /* grid-row: 2/3;
+  grid-column: 4/5; */
   width: 180px;
+  /* margin-top: 14px; */
 }
 
 .order-modal-window-label {
@@ -1795,6 +1802,7 @@ img {
 
 .order-modal-window-warning-text {
   margin: 0;
+  margin-bottom: 42px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -1802,7 +1810,146 @@ img {
   color: #FF3D3D;
 }
 
+.order-field-group-quantity {
+  position: relative;
+  margin-top: 14px;
+}
+
+/* .order-field-group-quantity:focus-within {
+  outline: 2px solid #AF4FFF;
+} */
+
+.order-modal-window-input.order-modal-window-input-quantity {
+  width: 180px;
+  padding: 20px 75px 20px 87px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.order-modal-window-input-quantity::-webkit-outer-spin-button,
+.order-modal-window-input-quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.order-modal-window-input-quantity-button {
+  position: absolute;
+  top: 21px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.order-modal-window-minus-button {
+  left: 21px;
+}
+
+.order-modal-window-plus-button {
+  right: 23px;
+}
+
+/* .order-modal-window-plus-button {
+  background-image: url("../images/modal-window/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.order-modal-window-input-quantity-button:hover {
+  opacity: 0.6;
+}
+
+.order-modal-window-input-quantity-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 3px;
+}
+
+.order-modal-window-input-quantity-button:active {
+  opacity: 0.3;
+  outline: none;
+}
+
 .order-modal-window-button {
-  grid-row: 3/4;
+  /* grid-row: 3/4; */
   width: 200px;
+}
+
+/*tooltip*/
+
+.order-modal-window-tooltip {
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+
+.order-modal-window-tooltip-toggle {
+  position: absolute;
+  top: -3px;
+  right: -34px;
+  width: 26px;
+  height: 26px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.order-modal-window-tooltip-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.order-modal-window-tooltip-toggle:hover .order-modal-window-tooltip-icon {
+  opacity: 0.6;
+}
+
+.order-modal-window-tooltip-toggle:focus .order-modal-window-tooltip-icon {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 3px;
+}
+
+.order-modal-window-tooltip-toggle:focus {
+  outline: none
+}
+
+.order-modal-window-tooltip-toggle:active .order-modal-window-tooltip-icon {
+  opacity: 0.3;
+}
+
+.order-modal-window-tooltip-text {
+  position: absolute;
+  display: none;
+  width: 200px;
+  top: 35px;
+  left: -20px;
+  padding: 19px 17px 19px 19px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: #000000;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.order-modal-window-tooltip-text::after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 14px;
+  top: -6px;
+  right: 70px;
+  background-image: url("../images/modal-window/modal-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.order-modal-window-tooltip-toggle:hover + .order-modal-window-tooltip-text,
+.order-modal-window-tooltip-toggle:focus + .order-modal-window-tooltip-text {
+  display: block;
 }
