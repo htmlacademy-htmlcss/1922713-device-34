@@ -11,14 +11,13 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
+  <!-- body -->
 
   <body class="main-body">
     <!--див сделан для того, чтобы задать ширину странице-->
     <div class="body-container">
-
       <!--small-width-container создан для задания секциям меньшей, чем у бади, ширины. ну и центрирования-->
       <header class="index-header small-width-container">
-
         <nav class="navigation">
           <a class="index-header-logo-link" href="#" title="Мы на этой странице.">
             <img class="index-header-logo" width="145" height="36" src="images/nav-images/logo-nav.svg"
@@ -36,8 +35,6 @@
               <button class="navigation-search-form-button" type="submit">Найти</button>
             </div>
           </form>
-
-
           <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">Войти</a>
@@ -47,7 +44,6 @@
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-link-popover" href="#">Корзина</a>
-
               <div class="popover">
                 <div class="popover-content">
                   <h2 class="visually-hidden">Корзина</h2>
@@ -59,8 +55,8 @@
                         <p class="popover-text">Любительская селфи-палка</p>
                       </a>
                       <button class="popover-delete-button" type="button">
-                        <svg class="" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"
-                          fill="#FFFFFF">
+                        <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10"
+                          xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF">
                           <path d="M10 .9 9.1 0 5 4.1.9 0 0 .9 4.1 5 0 9.1l.9.9L5 5.9 9.1 10l.9-.9L5.9 5 10 .9Z" />
                         </svg>
                         <span class="visually-hidden">Удалить товар</span>
@@ -74,8 +70,8 @@
                         <p class="popover-text">Профессиональная селфи-палка</p>
                       </a>
                       <button class="popover-delete-button" type="button">
-                        <svg class="" width="10" height="10" viewBox="0 0 10 10" fill="#FFFFFF"
-                          xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10"
+                          fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10 .9 9.1 0 5 4.1.9 0 0 .9 4.1 5 0 9.1l.9.9L5 5.9 9.1 10l.9-.9L5.9 5 10 .9Z" />
                         </svg>
                         <span class="visually-hidden">Удалить товар</span>
@@ -89,12 +85,8 @@
                   <a class="button popover-button" href="#">Открыть корзину</a>
                 </div>
               </div>
-
             </li>
           </ul>
-
-
-
           <!--див сделан для флексирования двух списков-->
           <div class="navigation-container">
             <!--див сделан для работы с выпадающим списком navigation-goods-sublist-->
@@ -114,7 +106,6 @@
                     <a class="navigation-goods-sublist-link" href="#">Экшн-камеры</a>
                   </li>
                 </ul>
-
                 <ul class="navigation-goods-sublist">
                   <li class="navigation-goods-sublist-item">
                     <a class="navigation-goods-sublist-link" href="#">Фитнес-браслеты</a>
@@ -123,7 +114,6 @@
                     <a class="navigation-goods-sublist-link" href="#">Умные часы</a>
                   </li>
                 </ul>
-
                 <ul class="navigation-goods-sublist">
                   <li class="navigation-goods-sublist-item">
                     <a class="navigation-goods-sublist-link" href="#">Квадрокоптеры</a>
@@ -131,7 +121,6 @@
                 </ul>
               </div>
             </div>
-
             <ul class=" navigation-services-list">
               <li class="navigation-services-item">
                 <a class="button navigation-services-button" href="#">Доставка</a>
@@ -146,22 +135,18 @@
           </div>
         </nav>
       </header>
-
+      <!-- main -->
       <main class="main-index">
         <h1 class="visually-hidden">Интернет-магазин Девайс.</h1>
-
         <section class="product-slider small-width-container">
           <h2 class="visually-hidden">Наши товары.</h2>
-
           <!--див для флексования слайдера, для скрытия слайдер-айтема-->
           <div class="product-slider-item product-slider-item-current">
             <h3 class="visually-hidden">Квадрокоптер.</h3>
-
             <!--див сделан для позиционирования кнопок слайдера относительно изображения-->
             <div class="product-slider-container">
               <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-1.png"
                 alt="Пример товара.">
-
               <!--див сделан для флексования и позиционирования кнопок слайдера-->
               <div class="product-slider-button-container">
                 <button class="product-slider-button product-slider-next-button" type="button">
@@ -172,16 +157,12 @@
                 </button>
               </div>
             </div>
-
-
             <!--див для флексования текстового содержимого слайдера-->
             <div class="product-slider-item-text-content">
               <p class="product-slider-number">01</p>
               <p class="product-slider-slogan">Порхает как бабочка, жалит как пчела!</p>
               <p class="product-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
-
-
               <!--див сделан для флексирования управляющей группы элементов слайдера-->
               <div class="product-slider-control">
                 <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
@@ -216,7 +197,6 @@
                   </li>
                 </ol>
               </div>
-
               <!--див сделан для флексования группы терминов-->
               <div class="product-slider-feature-lists">
                 <dl class="product-slider-feature-list">
@@ -230,16 +210,13 @@
               </div>
             </div>
           </div>
-
           <!--див для флексования слайдера-->
           <div class="product-slider-item">
             <h3 class="visually-hidden">Фитнес-браслет.</h3>
-
             <!--див сделан для позиционирования кнопок слайдера относительно изображения-->
             <div class="product-slider-container">
               <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-2.png"
                 alt="Пример товара.">
-
               <!--див сделан для флексования и позиционирования кнопок слайдера-->
               <div class="product-slider-button-container">
                 <button class="product-slider-button product-slider-next-button" type="button">
@@ -250,14 +227,12 @@
                 </button>
               </div>
             </div>
-
             <!--див для флексования текстового содержимого слайдера-->
             <div class="product-slider-item-text-content">
               <p class="product-slider-number">02</p>
               <p class="product-slider-slogan">Худеем<br> правильно!</p>
               <p class="product-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                 занятия и соблюдать диету.</p>
-
               <!--див сделан для флексирования управляющей группы элементов слайдера-->
               <div class="product-slider-control">
                 <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
@@ -280,7 +255,6 @@
                   </li>
                 </ol>
               </div>
-
               <!--див сделан для флексования группы терминов-->
               <div class="product-slider-feature-lists">
                 <dl class="product-slider-feature-list">
@@ -290,16 +264,13 @@
               </div>
             </div>
           </div>
-
           <!--див для флексования слайдера-->
           <div class="product-slider-item">
             <h3 class="visually-hidden">Селфи-палка.</h3>
-
             <!--див сделан для позиционирования кнопок слайдера относительно изображения-->
             <div class="product-slider-container">
               <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-3.png"
                 alt="Пример товара.">
-
               <!--див сделан для флексования и позиционирования кнопок слайдера-->
               <div class="product-slider-button-container">
                 <button class="product-slider-button product-slider-next-button" type="button">
@@ -310,7 +281,6 @@
                 </button>
               </div>
             </div>
-
             <!--див для флексования текстового содержимого слайдера-->
             <div class="product-slider-item-text-content">
               <p class="product-slider-number">03</p>
@@ -356,13 +326,7 @@
               </div>
             </div>
           </div>
-
-
-
-
-
         </section>
-
         <section class="main-product small-width-container">
           <h2 class="visually-hidden">Каталог товаров.</h2>
           <ul class="main-product-list">
@@ -404,10 +368,8 @@
             </li>
           </ul>
         </section>
-
         <section class="main-services small-width-container">
           <h2 class="visually-hidden">Наши услуги.</h2>
-
           <ul class="main-services-slider-pagination">
             <li class="main-services-slider-pagination-item">
               <button class="button main-services-slider-button current-main-services-slider-button"
@@ -420,7 +382,6 @@
               <button class="button button-line-through main-services-slider-button" type="button">Кредит</button>
             </li>
           </ul>
-
           <!--див сделан для флексирования текстового слайдера-->
           <div class="main-services-slider-item">
             <h2 class="main-services-title">Доставка</h2>
@@ -439,22 +400,19 @@
             <p class="main-services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут
               для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </div> -->
-
         </section>
-
         <section class="order small-width-container">
           <h2 class="visually-hidden">Раздел заказа редкого товара</h2>
           <a class="order-link" href="#">
             <p class="order-text">Доставим редкий товар под заказ</p>
-            <svg class="order-tooltip" width="41" height="40" viewBox="0 0 41 40" fill="#000000"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="order-tooltip" svg aria-hidden="true" focusable="false" width="41" height="40"
+              viewBox="0 0 41 40" fill="#000000" xmlns="http://www.w3.org/2000/svg">
               <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5" />
               <path d="M21 14H19V16H21V14Z" />
               <path d="M21 18H19V26H21V18Z" />
             </svg>
           </a>
         </section>
-
         <!--див сделан для гридирования двух столбиков-->
         <div class="index-columns small-width-container">
           <section class="about-us">
@@ -471,7 +429,6 @@
             </ul>
             <a class="button button-line-through about-us-button" href="#">Подробнее о нас</a>
           </section>
-
           <section class="main-contacts">
             <h2 class="main-contacts-title">Контакты</h2>
             <p class="main-contacts-text">Вы можете забрать товар сами, заехав в наш офис.
@@ -495,7 +452,6 @@
               нам</a>
           </section>
         </div>
-
         <section class="subscribe-section">
           <div class="subscribe-section-container">
             <h2 class="subscribe-title">Подпишитесь<br> на рассылку</h2>
@@ -514,25 +470,20 @@
             <p class="subscribe-information">Это бесплатно</p>
           </div>
         </section>
-
       </main>
-
       <footer class="page-footer">
         <a class="footer-logo-link" href="#" title="Мы на этой странице.">
           <img class="footer-logo" width="145" height="36" src="images/footer-images/logo-footer.svg"
             alt="Логотип официального сайта интернет-магазина Device">
         </a>
-
         <!--див сделан для грида-->
         <div class="footer-container">
-
           <section class="footer-contacts">
             <h2 class="visually-hidden">Контакты.</h2>
             <address class="footer-address">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </address>
           </section>
-
           <section class="footer-services">
             <h2 class="visually-hidden">Наши услуги.</h2>
             <ul class="footer-services-list">
@@ -547,14 +498,12 @@
               </li>
             </ul>
           </section>
-
           <section class="footer-phone">
             <h2 class="visually-hidden">Контактный телефон.</h2>
             <address>
               <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             </address>
           </section>
-
           <section class="footer-social">
             <h2 class="visually-hidden">Социальные сети.</h2>
             <ul class="footer-social-list">
@@ -575,7 +524,6 @@
               </li>
             </ul>
           </section>
-
           <section class="footer-academy">
             <h2 class="visually-hidden">Сделано в Htmlacademy.ru.</h2>
             <a class="footer-academy-link" href="https://htmlacademy.ru/">
@@ -588,55 +536,41 @@
             </a>
           </section>
         </div>
-
-
-
-
       </footer>
     </div>
-
-
-
-
-    <div class="modal-window">
-      <!-- <div class="modal-window modal-window-close"> -->
+    <!-- modal-window -->
+    <div class="modal-window modal-window-close">
       <div class="order-modal-window">
+        <!-- <div class="order-modal-window"> -->
         <h2 class="order-modal-window-title">Доставка под заказ</h2>
-
         <button class="order-modal-window-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
-
         <form class="order-modal-window-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="order-field-group">
             <label class="order-modal-window-label" for="name">Ваше имя</label>
             <input class="order-modal-window-input" id="name" name="name" type="text" placeholder="Введите имя"
               required>
-
           </div>
-
           <div class="order-field-group">
             <label class="order-modal-window-label" for="email">Ваш e-mail:</label>
             <input class="order-modal-window-input order-modal-window-input-error" id="email" name="email" type="text"
               placeholder="почта" required>
             <p class="order-modal-window-warning-text">Забавный у вас адрес</p>
           </div>
-
           <div class="order-field-group">
             <label class="order-modal-window-label" for="product-name">Что нужно привезти:</label>
             <input class="order-modal-window-input" id="product-name" name="product-name" type="text"
               placeholder="В свободной форме" required>
           </div>
-
           <div class="order-field-group">
             <span class="order-modal-window-label order-modal-window-label-icon">
               <label class="order-modal-window-label order-modal-window-label-quantity"
                 for="product-quantity">Количество:</label>
               <span class="order-modal-window-tooltip">
-
                 <button class="order-modal-window-tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  <svg class="order-modal-window-tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="#000000"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="order-modal-window-tooltip-icon" svg aria-hidden="true" focusable="false" width="26"
+                    height="26" viewBox="0 0 26 26" fill="#000000" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="13" cy="13" r="13" fill="#FFE17F" />
                     <path d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" />
                   </svg>
@@ -648,7 +582,8 @@
               </span>
               <div class="order-field-group-quantity">
                 <button class="order-modal-window-input-quantity-button order-modal-window-minus-button" type="button">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="#0000000" xmlns="http://www.w3.org/2000/svg">
+                  <svg svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
+                    fill="#0000000" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 7H0v2h16V7Z" />
                   </svg>
                   <span class="visually-hidden">Уменьшить количество товара.</span>
@@ -656,20 +591,18 @@
                 <input class="order-modal-window-input order-modal-window-input-quantity" id="product-quantity"
                   name="product-quantity" type="number" min="1" max="1000" placeholder="1">
                 <button class="order-modal-window-input-quantity-button order-modal-window-plus-button" type="button">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                  <svg svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
+                    fill="#000000" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />
                   </svg>
                   <span class="visually-hidden">Увеличить количество товара.</span>
                 </button>
               </div>
           </div>
-
           <button class="button button-line-through order-modal-window-button" type="submit">Отправить</button>
-
         </form>
       </div>
     </div>
-
   </body>
 
 </html>

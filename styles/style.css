@@ -313,7 +313,7 @@ img {
   width: 1160px;
   left: -58px;
   top: 64px;
-  min-height: 145px;
+  min-height: 150px;
   padding: 0 60px 33px;
   font-size: 16px;
   line-height: 18px;
@@ -331,6 +331,7 @@ img {
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0;
+  margin-top: 4px;
   padding: 0;
   font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
@@ -340,15 +341,15 @@ img {
 }
 
 .navigation-goods-sublist-item + .navigation-goods-sublist-item {
-  margin-top: 21px;
+  margin-top: 18px;
 }
 
 .navigation-goods-sublist:first-of-type {
-  margin-right: 50px;
+  margin-right: 59px;
 }
 
 .navigation-goods-sublist:nth-of-type(2) {
-  margin-right: 80px;
+  margin-right: 71px;
 }
 
 .navigation-goods-sublist-link {
@@ -1269,6 +1270,7 @@ img {
 .footer-container {
   display: grid;
   grid-template-columns: 239px 1fr 178px;
+  padding-bottom: 46px;
 }
 
 /*левая часть футера*/
@@ -1656,10 +1658,6 @@ img {
   background-color: rgba(240, 240, 240, 0.9);
 }
 
-.order-modal-window-close {
-  display: none;
-}
-
 .order-modal-window {
   position: relative;
   width: 920px;
@@ -1669,6 +1667,10 @@ img {
   border: 10px solid #000000;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+}
+
+.modal-window-close {
+  display: none;
 }
 
 .order-modal-window-close-button {
