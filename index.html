@@ -394,8 +394,8 @@
           <h2 class="visually-hidden">Раздел заказа редкого товара</h2>
           <a class="order-link" href="#">
             <p class="order-text">Доставим редкий товар под заказ</p>
-            <svg class="order-tooltip" svg aria-hidden="true" focusable="false" width="41" height="40"
-              viewBox="0 0 41 40" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+            <svg class="order-tooltip" aria-hidden="true" focusable="false" width="41" height="40" viewBox="0 0 41 40"
+              fill="#000000" xmlns="http://www.w3.org/2000/svg">
               <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5" />
               <path d="M21 14H19V16H21V14Z" />
               <path d="M21 18H19V26H21V18Z" />
@@ -529,8 +529,8 @@
     </div>
     <!-- modal-window -->
     <div class="modal-window modal-window-close">
+      <!-- <div class="modal-window"> -->
       <div class="order-modal-window">
-        <!-- <div class="order-modal-window"> -->
         <h2 class="order-modal-window-title">Доставка под заказ</h2>
         <button class="order-modal-window-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
@@ -557,8 +557,9 @@
               <label class="order-modal-window-label order-modal-window-label-quantity"
                 for="product-quantity">Количество:</label>
               <span class="order-modal-window-tooltip">
-                <button class="order-modal-window-tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  <svg class="order-modal-window-tooltip-icon" svg aria-hidden="true" focusable="false" width="26"
+                <button class="order-modal-window-tooltip-toggle" type="button"
+                  aria-labelledby="order-modal-window-tooltip-label">
+                  <svg class="order-modal-window-tooltip-icon" aria-hidden="true" focusable="false" width="26"
                     height="26" viewBox="0 0 26 26" fill="#000000" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="13" cy="13" r="13" fill="#FFE17F" />
                     <path d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" />
@@ -569,24 +570,25 @@
                   сколько нужно.<br> Привезём сколько получится по требованиям<br> к провозу багажа.
                 </span>
               </span>
-              <div class="order-field-group-quantity">
-                <button class="order-modal-window-input-quantity-button order-modal-window-minus-button" type="button">
-                  <svg svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
-                    fill="#0000000" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 7H0v2h16V7Z" />
-                  </svg>
-                  <span class="visually-hidden">Уменьшить количество товара.</span>
-                </button>
-                <input class="order-modal-window-input order-modal-window-input-quantity" id="product-quantity"
-                  name="product-quantity" type="number" min="1" max="1000" placeholder="1">
-                <button class="order-modal-window-input-quantity-button order-modal-window-plus-button" type="button">
-                  <svg svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
-                    fill="#000000" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />
-                  </svg>
-                  <span class="visually-hidden">Увеличить количество товара.</span>
-                </button>
-              </div>
+            </span>
+            <div class="order-field-group-quantity">
+              <button class="order-modal-window-input-quantity-button order-modal-window-minus-button" type="button">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="#0000000"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7H0v2h16V7Z" />
+                </svg>
+                <span class="visually-hidden">Уменьшить количество товара.</span>
+              </button>
+              <input class="order-modal-window-input order-modal-window-input-quantity" id="product-quantity"
+                name="product-quantity" type="number" min="1" max="1000" placeholder="1">
+              <button class="order-modal-window-input-quantity-button order-modal-window-plus-button" type="button">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="#000000"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />
+                </svg>
+                <span class="visually-hidden">Увеличить количество товара.</span>
+              </button>
+            </div>
           </div>
           <button class="button button-line-through order-modal-window-button" type="submit">Отправить</button>
         </form>
