@@ -519,6 +519,7 @@ img {
 .product-slider-image {
   display: block;
   margin-top: -82px;
+  margin-right: 40px;
 }
 
 .product-slider-number {
@@ -545,15 +546,9 @@ img {
   margin-bottom: 48px;
 }
 
-.product-slider-control {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 46px;
-  margin-left: 2px;
-}
-
 .product-slider-info-button {
   width: 220px;
+  margin-bottom: 46px;
 }
 
 .product-slider-feature-lists {
@@ -567,12 +562,8 @@ img {
   flex-direction: column-reverse;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 0 0 10px 0;
+  margin: 0 21px 10px 0;
   padding: 0;
-}
-
-.product-slider-item:first-of-type .product-slider-feature-list:not(:last-child) {
-  margin-right: 21px;
 }
 
 .product-slider-item:last-of-type .product-slider-feature-list:not(:last-child) {
@@ -638,12 +629,13 @@ img {
 }
 
 .product-slider-pagination {
-  position: relative;
-  bottom: 6px;
+  position: absolute;
+  right: 0;
+  bottom: 188px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 7px 0;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
@@ -904,7 +896,6 @@ img {
 }
 
 .order-link {
-  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -912,20 +903,6 @@ img {
   cursor: pointer;
   box-sizing: border-box;
 }
-
-/* .order-link::before {
-  content: "";
-  position: absolute;
-  width: 125px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #FFE17F;
-  background-image: url("../images/main-images/truck.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 47px 31px;
-} */
 
 .order-link-icon {
   width: 125px;
@@ -961,7 +938,7 @@ img {
 
 .order-text {
   margin: 0;
-  padding: 42px 0 36px 0;
+  padding: 56px 0 36px 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 20px;
