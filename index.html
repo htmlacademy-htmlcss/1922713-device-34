@@ -9,7 +9,7 @@
       content="Официальный сайт интернет-магазина Device. Здесь Вы можете приобрести различную электронику">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <!-- body -->
@@ -29,7 +29,7 @@
             <!--див сделан для квадратного фокуса на закругленной форме-->
             <div class="navigation-search-container">
               <input class="navigation-search-form-input" id="nav-search-form-input" name="nav-search-form-input"
-                type="text" placeholder="Текст поиска">
+                type="text" placeholder="Текст поиска" required>
             </div>
             <!--див сделан для квадратного фокуса на закругленной форме-->
             <div class="navigation-search-container">
@@ -410,13 +410,18 @@
         <section class="order small-width-container">
           <h2 class="visually-hidden">Раздел заказа редкого товара</h2>
           <a class="order-link" href="#">
+            <div class="order-link-icon">
+              <span class="visually-hidden">Грузовичок-иконка раздела доставки.</span>
+            </div>
             <p class="order-text">Доставим редкий товар под заказ</p>
-            <svg class="order-tooltip" aria-hidden="true" focusable="false" width="41" height="40" viewBox="0 0 41 40"
-              fill="#000000" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5" />
-              <path d="M21 14H19V16H21V14Z" />
-              <path d="M21 18H19V26H21V18Z" />
-            </svg>
+            <button class="order-tooltip-button">
+              <svg class="order-tooltip" aria-hidden="true" focusable="false" width="41" height="40" viewBox="0 0 41 40"
+                fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5" />
+                <path d="M21 14H19V16H21V14Z" />
+                <path d="M21 18H19V26H21V18Z" />
+              </svg>
+            </button>
           </a>
         </section>
         <!--див сделан для гридирования двух столбиков-->
