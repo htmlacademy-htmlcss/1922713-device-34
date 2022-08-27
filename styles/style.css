@@ -942,8 +942,9 @@ img {
 }
 
 .order-text {
-  margin: 0 auto;
-  padding: 42px 0 36px 147px;
+  width: 100%;
+  margin: 0 135px;
+  padding: 42px 0 36px 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -951,18 +952,12 @@ img {
   color: #000000;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-}
-
-.order-tooltip-button {
-  display: inline-block;
-  margin: 0 0 0 15px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  box-sizing: border-box;
+  text-align: center;
 }
 
 .order-tooltip {
+  position: absolute;
+  right: 0;
   margin: 0 43px;
   width: 41px;
   height: 40px;
