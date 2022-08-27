@@ -896,18 +896,23 @@ img {
 }
 
 .order-link {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   text-decoration: none;
   cursor: pointer;
   box-sizing: border-box;
 }
 
 .order-link-icon {
+  position: absolute;
   width: 125px;
-  min-height: 100px;
-  height: 100%;
+  top: 0;
+  right: 125px;
+  bottom: 0;
+  left: 0;
   margin: 0 15px 0 0;
   background-color: #FFE17F;
   background-image: url("../images/main-images/truck.svg");
@@ -937,8 +942,8 @@ img {
 }
 
 .order-text {
-  margin: 0;
-  padding: 56px 0 36px 0;
+  margin: 0 auto;
+  padding: 42px 0 36px 147px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -950,7 +955,7 @@ img {
 
 .order-tooltip-button {
   display: inline-block;
-  margin: 0 0 0 9px;
+  margin: 0 0 0 15px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -969,7 +974,7 @@ img {
 /*index-columns*/
 
 .index-columns {
-  margin-bottom: 67px;
+  margin-bottom: 66px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 96px;
