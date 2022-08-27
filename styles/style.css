@@ -697,11 +697,36 @@ img {
   margin-bottom: 68px;
 }
 
+.main-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .main-product-link {
   text-decoration: none;
 }
 
+.main-product-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 33px;
+  min-height: 160px;
+  background-color: #FFE17F;
+}
+
+.main-product-image-container-monopod {
+  align-items: end;
+}
+
 .main-product-title {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   color: #000000;
   font-family: "Raleway", "Arial", sans-serif;
@@ -711,18 +736,7 @@ img {
   letter-spacing: -0.02em;
 }
 
-.main-product-image {
-  display: block;
-  margin-bottom: 33px;
-  width: 160px;
-  height: 160px;
-  background-color: #FFE17F;
-  background-image: url("../images/main-product/product-1.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.main-product-item:hover .main-product-image {
+.main-product-item:hover .main-product-image-container {
   background-color: #FFC700;
 }
 
@@ -740,42 +754,13 @@ img {
   outline: none;
 }
 
-.main-product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .main-product-item {
+  width: 160px;
   margin-bottom: 20px;
 }
 
 .main-product-item:not(:nth-of-type(6n)) {
   margin-right: 40px;
-}
-
-.main-product-item:nth-of-type(2) .main-product-image {
-  background-image: url("../images/main-product/product-2.svg");
-  background-position: bottom;
-}
-
-.main-product-item:nth-of-type(3) .main-product-image {
-  background-image: url("../images/main-product/product-3.svg");
-}
-
-.main-product-item:nth-of-type(4) .main-product-image {
-  background-image: url("../images/main-product/product-4.svg");
-}
-
-.main-product-item:nth-of-type(5) .main-product-image {
-  background-image: url("../images/main-product/product-5.svg");
-}
-
-.main-product-item:nth-of-type(6) .main-product-image {
-  background-image: url("../images/main-product/product-6.svg");
 }
 
 /*main-services*/
