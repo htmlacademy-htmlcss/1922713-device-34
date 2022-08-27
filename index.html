@@ -9,7 +9,7 @@
       content="Официальный сайт интернет-магазина Device. Здесь Вы можете приобрести различную электронику">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <!-- body -->
@@ -29,7 +29,7 @@
             <!--див сделан для квадратного фокуса на закругленной форме-->
             <div class="navigation-search-container">
               <input class="navigation-search-form-input" id="nav-search-form-input" name="nav-search-form-input"
-                type="text" placeholder="Текст поиска">
+                type="text" placeholder="Текст поиска" required>
             </div>
             <!--див сделан для квадратного фокуса на закругленной форме-->
             <div class="navigation-search-container">
@@ -51,8 +51,8 @@
                   <ul class="popover-list">
                     <li class="popover-list-item">
                       <a class="popover-link" href="#">
-                        <img class="popover-image" width="39" height="52"
-                          src="../1922713-device-34/images/popover-images/product-1.png" alt="Любительская селфи-палка">
+                        <img class="popover-image" width="39" height="52" src="images/popover-images/product-1.png"
+                          alt="Любительская селфи-палка">
                         <p class="popover-text">Любительская селфи-палка</p>
                       </a>
                       <button class="popover-delete-button" type="button">
@@ -65,8 +65,7 @@
                     </li>
                     <li class="popover-list-item">
                       <a class="popover-link" href="#">
-                        <img class="popover-image" width="39" height="52"
-                          src="../1922713-device-34/images/popover-images/product-2.png"
+                        <img class="popover-image" width="39" height="52" src="images/popover-images/product-1.png"
                           alt="Профессиональная селфи-палка">
                         <p class="popover-text">Профессиональная селфи-палка</p>
                       </a>
@@ -141,51 +140,27 @@
         <h1 class="visually-hidden">Интернет-магазин Девайс.</h1>
         <section class="product-slider small-width-container">
           <h2 class="visually-hidden">Наши товары.</h2>
+          <!--див сделан для флексования и позиционирования кнопок слайдера-->
+          <div class="product-slider-button-container">
+            <button class="product-slider-button product-slider-next-button" type="button">
+              <span class="visually-hidden">Следующий товар.</span>
+            </button>
+            <button class="product-slider-button product-slider-prev-button" type="button">
+              <span class="visually-hidden">Предыдущий товар.</span>
+            </button>
+          </div>
           <!--див для флексования слайдера, для скрытия слайдер-айтема-->
           <div class="product-slider-item product-slider-item-current">
             <h3 class="visually-hidden">Квадрокоптер.</h3>
-            <!--див сделан для позиционирования кнопок слайдера относительно изображения-->
-            <div class="product-slider-container">
-              <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-1.png"
-                alt="Пример товара.">
-              <!--див сделан для флексования и позиционирования кнопок слайдера-->
-              <div class="product-slider-button-container">
-                <button class="product-slider-button product-slider-next-button" type="button">
-                  <span class="visually-hidden">Следующий товар.</span>
-                </button>
-                <button class="product-slider-button product-slider-prev-button" type="button">
-                  <span class="visually-hidden">Предыдущий товар.</span>
-                </button>
-              </div>
-            </div>
+            <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-1.png"
+              alt="Пример товара.">
             <!--див для флексования текстового содержимого слайдера-->
             <div class="product-slider-item-text-content">
               <p class="product-slider-number">01</p>
               <p class="product-slider-slogan">Порхает как бабочка, жалит как пчела!</p>
               <p class="product-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
-              <!--див сделан для флексирования управляющей группы элементов слайдера-->
-              <div class="product-slider-control">
-                <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
-                <ol class="product-slider-pagination">
-                  <li class="product-slider-pagination-item">
-                    <button class="button product-slider-pagination-button product-slider-pagination-current-button"
-                      type="button">
-                      <span class="visually-hidden">1 товар.</span>
-                    </button>
-                  </li>
-                  <li class="product-slider-pagination-item">
-                    <button class="button product-slider-pagination-button" type="button">
-                      <span class="visually-hidden">2 товар.</span>
-                    </button>
-                  </li>
-                  <li class="product-slider-pagination-item">
-                    <button class="button product-slider-pagination-button" type="button">
-                      <span class="visually-hidden">3 товар.</span>
-                    </button>
-                  </li>
-                </ol>
-              </div>
+              <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
               <!--див сделан для флексования группы терминов-->
               <div class="product-slider-feature-lists">
                 <dl class="product-slider-feature-list">
@@ -202,48 +177,15 @@
           <!--див для флексования слайдера-->
           <div class="product-slider-item">
             <h3 class="visually-hidden">Фитнес-браслет.</h3>
-            <!--див сделан для позиционирования кнопок слайдера относительно изображения-->
-            <div class="product-slider-container">
-              <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-2.png"
-                alt="Пример товара.">
-              <!--див сделан для флексования и позиционирования кнопок слайдера-->
-              <div class="product-slider-button-container">
-                <button class="product-slider-button product-slider-next-button" type="button">
-                  <span class="visually-hidden">Следующий товар.</span>
-                </button>
-                <button class="product-slider-button product-slider-prev-button" type="button">
-                  <span class="visually-hidden">Предыдущий товар.</span>
-                </button>
-              </div>
-            </div>
+            <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-2.png"
+              alt="Пример товара.">
             <!--див для флексования текстового содержимого слайдера-->
             <div class="product-slider-item-text-content">
               <p class="product-slider-number">02</p>
               <p class="product-slider-slogan">Худеем<br> правильно!</p>
               <p class="product-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                 занятия и соблюдать диету.</p>
-              <!--див сделан для флексирования управляющей группы элементов слайдера-->
-              <div class="product-slider-control">
-                <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
-                <ol class="product-slider-pagination">
-                  <li class="product-slider-pagination-item">
-                    <button class="product-slider-pagination-button product-slider-pagination-current-button"
-                      type="button">
-                      <span class="visually-hidden">1 товар.</span>
-                    </button>
-                  </li>
-                  <li class="product-slider-pagination-item">
-                    <button class="product-slider-pagination-button" type="button">
-                      <span class="visually-hidden">2 товар.</span>
-                    </button>
-                  </li>
-                  <li class="product-slider-pagination-item">
-                    <button class="product-slider-pagination-button" type="button">
-                      <span class="visually-hidden">3 товар.</span>
-                    </button>
-                  </li>
-                </ol>
-              </div>
+              <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
               <!--див сделан для флексования группы терминов-->
               <div class="product-slider-feature-lists">
                 <dl class="product-slider-feature-list">
@@ -256,48 +198,15 @@
           <!--див для флексования слайдера-->
           <div class="product-slider-item">
             <h3 class="visually-hidden">Селфи-палка.</h3>
-            <!--див сделан для позиционирования кнопок слайдера относительно изображения-->
-            <div class="product-slider-container">
-              <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-3.png"
-                alt="Пример товара.">
-              <!--див сделан для флексования и позиционирования кнопок слайдера-->
-              <div class="product-slider-button-container">
-                <button class="product-slider-button product-slider-next-button" type="button">
-                  <span class="visually-hidden">Следующий товар.</span>
-                </button>
-                <button class="product-slider-button product-slider-prev-button" type="button">
-                  <span class="visually-hidden">Предыдущий товар.</span>
-                </button>
-              </div>
-            </div>
+            <img class="product-slider-image" width="560" height="560" src="images/slider-images/slider-3.png"
+              alt="Пример товара.">
             <!--див для флексования текстового содержимого слайдера-->
             <div class="product-slider-item-text-content">
               <p class="product-slider-number">03</p>
               <p class="product-slider-slogan">Делай селфи,<br>как Бен Стиллер!</p>
               <p class="product-slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                 Карл!) метров длиной и весом всего 5 кг.</p>
-              <!--див сделан для флексирования управляющей группы элементов слайдера-->
-              <div class="product-slider-control">
-                <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
-                <ol class="product-slider-pagination">
-                  <li class="product-slider-pagination-item">
-                    <button class="product-slider-pagination-button product-slider-pagination-current-button"
-                      type="button">
-                      <span class="visually-hidden">1 товар.</span>
-                    </button>
-                  </li>
-                  <li class="product-slider-pagination-item">
-                    <button class="product-slider-pagination-button" type="button">
-                      <span class="visually-hidden">2 товар.</span>
-                    </button>
-                  </li>
-                  <li class="product-slider-pagination-item">
-                    <button class="product-slider-pagination-button" type="button">
-                      <span class="visually-hidden">3 товар.</span>
-                    </button>
-                  </li>
-                </ol>
-              </div>
+              <a class="button button-line-through product-slider-info-button" href="#">Подробнее</a>
               <!--див сделан для флексования группы терминов-->
               <div class="product-slider-feature-lists">
                 <dl class="product-slider-feature-list">
@@ -315,49 +224,85 @@
               </div>
             </div>
           </div>
+          <ol class="product-slider-pagination">
+            <li class="product-slider-pagination-item">
+              <button class="button product-slider-pagination-button product-slider-pagination-current-button"
+                type="button">
+                <span class="visually-hidden">первый товар.</span>
+              </button>
+            </li>
+            <li class="product-slider-pagination-item">
+              <button class="button product-slider-pagination-button" type="button">
+                <span class="visually-hidden">второй товар.</span>
+              </button>
+            </li>
+            <li class="product-slider-pagination-item">
+              <button class="button product-slider-pagination-button" type="button">
+                <span class="visually-hidden">третий товар.</span>
+              </button>
+            </li>
+          </ol>
         </section>
         <section class="main-product small-width-container">
           <h2 class="visually-hidden">Каталог товаров.</h2>
           <ul class="main-product-list">
             <li class="main-product-item">
               <a class="main-product-link" href="#">
-                <div class="main-product-image"></div>
+                <div class="main-product-image-container">
+                  <img class="main-product-image" src="images/main-product/product-1.svg" width="97" height="55"
+                    alt="Виртуальная реальность.">
+                </div>
                 <h3 class="main-product-title">Виртуальная<br> реальность</h3>
               </a>
             </li>
             <li class="main-product-item">
               <a class="main-product-link" href="#">
-                <div class="main-product-image"></div>
+                <div class="main-product-image-container main-product-image-container-monopod">
+                  <img class="main-product-image" src="images/main-product/product-2.svg" width="86" height="116"
+                    alt="Моноподы для селфи.">
+                </div>
                 <h3 class="main-product-title">Моноподы<br> для селфи</h3>
               </a>
             </li>
             <li class="main-product-item">
               <a class="main-product-link" href="#">
-                <div class="main-product-image"></div>
+                <div class="main-product-image-container">
+                  <img class="main-product-image" src="images/main-product/product-3.svg" width="72" height="87"
+                    alt="Экшн-камеры.">
+                </div>
                 <h3 class="main-product-title">Экшн-камеры</h3>
               </a>
             </li>
             <li class="main-product-item">
               <a class="main-product-link" href="#">
-                <div class="main-product-image"></div>
+                <div class="main-product-image-container">
+                  <img class="main-product-image" src="images/main-product/product-4.svg" width="108" height="65"
+                    alt="Фитнес-браслеты.">
+                </div>
                 <h3 class="main-product-title">Фитнес-браслеты</h3>
               </a>
             </li>
             <li class="main-product-item">
               <a class="main-product-link" href="#">
-                <div class="main-product-image"></div>
+                <div class="main-product-image-container">
+                  <img class="main-product-image" src="images/main-product/product-5.svg" width="57" height="98"
+                    alt="Умные часы.">
+                </div>
                 <h3 class="main-product-title">Умные часы</h3>
               </a>
             </li>
             <li class="main-product-item">
               <a class="main-product-link" href="#">
-                <div class="main-product-image"></div>
+                <div class="main-product-image-container">
+                  <img class="main-product-image" src="images/main-product/product-6.svg" width="133" height="70"
+                    alt="Квадрокоптеры.">
+                </div>
                 <h3 class="main-product-title">Квадрокоптеры</h3>
               </a>
             </li>
           </ul>
         </section>
-        <section class="main-services small-width-container">
+        <section class="main-services">
           <h2 class="visually-hidden">Наши услуги.</h2>
           <ul class="main-services-slider-pagination">
             <li class="main-services-slider-pagination-item">
@@ -393,13 +338,18 @@
         <section class="order small-width-container">
           <h2 class="visually-hidden">Раздел заказа редкого товара</h2>
           <a class="order-link" href="#">
+            <div class="order-link-icon">
+              <span class="visually-hidden">Грузовичок-иконка раздела доставки.</span>
+            </div>
             <p class="order-text">Доставим редкий товар под заказ</p>
-            <svg class="order-tooltip" aria-hidden="true" focusable="false" width="41" height="40" viewBox="0 0 41 40"
-              fill="#000000" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5" />
-              <path d="M21 14H19V16H21V14Z" />
-              <path d="M21 18H19V26H21V18Z" />
-            </svg>
+            <button class="order-tooltip-button" type="button">
+              <svg class="order-tooltip" aria-hidden="true" focusable="false" width="41" height="40" viewBox="0 0 41 40"
+                fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5" />
+                <path d="M21 14H19V16H21V14Z" />
+                <path d="M21 18H19V26H21V18Z" />
+              </svg>
+            </button>
           </a>
         </section>
         <!--див сделан для гридирования двух столбиков-->
@@ -445,7 +395,7 @@
           <div class="subscribe-section-container">
             <h2 class="subscribe-title">Подпишитесь<br> на рассылку</h2>
             <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br>
-              длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
+              длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
           </div>
           <div class="subscribe-section-container">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
