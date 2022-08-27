@@ -35,7 +35,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 img {
@@ -362,7 +362,7 @@ img {
   list-style-type: none;
 }
 
-.navigation-services-item:first-of-type {
+.navigation-services-item:not(:nth-of-type(3n)) {
   margin-right: 40px;
 }
 
@@ -567,7 +567,7 @@ img {
   flex-direction: column-reverse;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
 }
 
