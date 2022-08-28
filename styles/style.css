@@ -62,7 +62,7 @@ img {
 }
 
 .button-line-through {
-  padding: 10px 10px;
+  padding: 10px 10px 10px 14px;
   text-align: center;
   background-image: linear-gradient(to bottom, transparent 40%, #FFE17F 40%, #FFE17F 60%, transparent 60%, transparent 100%);
 }
@@ -1201,7 +1201,7 @@ img {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 2px;
+  left: 1px;
   width: 557px;
   height: 3px;
   background-color: #C4C4C4;
