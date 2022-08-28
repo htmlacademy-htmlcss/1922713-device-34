@@ -1168,13 +1168,14 @@ img {
 
 .subscribe-form {
   display: flex;
+  align-items: flex-end;
   margin-right: auto;
 }
 
 .subscribe-input {
   width: 558px;
   height: 100%;
-  padding: 13px 17px 14px 17px;
+  padding: 17px 17px 18px 17px;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
