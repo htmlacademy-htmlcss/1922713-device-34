@@ -1168,7 +1168,7 @@ img {
 
 .subscribe-form {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   margin-right: auto;
 }
 
