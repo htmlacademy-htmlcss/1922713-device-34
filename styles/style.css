@@ -27,9 +27,11 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   min-width: 1440px;
-  height: 100%;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -97,15 +99,6 @@ img {
 }
 
 /*body*/
-
-.body-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  /* width: 1440px; */
-  margin: 0 auto;
-  background-color: #FFFFFF;
-}
 
 .small-width-container {
   width: 1160px;
