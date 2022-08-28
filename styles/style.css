@@ -62,7 +62,7 @@ img {
 }
 
 .button-line-through {
-  padding: 10px 10px;
+  padding: 10px 10px 10px 14px;
   text-align: center;
   background-image: linear-gradient(to bottom, transparent 40%, #FFE17F 40%, #FFE17F 60%, transparent 60%, transparent 100%);
 }
@@ -120,7 +120,7 @@ img {
 
 .index-header {
   margin-top: 40px;
-  padding-bottom: 131px;
+  padding-bottom: 132px;
   background-color: #FFE17F;
 }
 
@@ -493,7 +493,7 @@ img {
 
 .product-slider {
   position: relative;
-  margin-top: -67px;
+  margin-top: -68px;
   margin-bottom: 70px;
 }
 
@@ -700,26 +700,47 @@ img {
 
 .main-product-link {
   text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  min-height: 160px;
 }
 
 .main-product-image-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 33px;
-  min-height: 160px;
+  width: 100%;
+  height: 160px;
+  background-image: url("../images/main-product/product-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #FFE17F;
 }
 
-.main-product-image-container-monopod {
-  align-items: end;
+.main-product-item:nth-of-type(2) .main-product-image-container {
+  background-image: url("../images/main-product/product-2.svg");
+  background-position: bottom;
+}
+
+.main-product-item:nth-of-type(3) .main-product-image-container {
+  background-image: url("../images/main-product/product-3.svg");
+}
+
+.main-product-item:nth-of-type(4) .main-product-image-container {
+  background-image: url("../images/main-product/product-4.svg");
+}
+
+.main-product-item:nth-of-type(5) .main-product-image-container {
+  background-image: url("../images/main-product/product-5.svg");
+}
+
+.main-product-item:nth-of-type(6) .main-product-image-container {
+  background-image: url("../images/main-product/product-6.svg");
 }
 
 .main-product-title {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 33px 0 0 0;
   color: #000000;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
@@ -741,7 +762,6 @@ img {
 }
 
 .main-product-link:focus-visible,
-.main-product-image:focus-visible,
 .main-product-title:focus-visible {
   outline: none;
 }
@@ -944,7 +964,7 @@ img {
 .order-text {
   width: 100%;
   margin: 0 135px;
-  padding: 42px 0 36px 0;
+  padding: 41px 0 36px 4px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -969,7 +989,7 @@ img {
 /*index-columns*/
 
 .index-columns {
-  margin-bottom: 66px;
+  margin-bottom: 67px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 96px;
@@ -1131,6 +1151,7 @@ img {
 }
 
 .subscribe-title {
+  width: 348px;
   margin: 10px 252px 0 0;
   padding: 0;
   font-family: "Raleway", "Arial", sans-serif;
@@ -1141,6 +1162,7 @@ img {
 }
 
 .subscribe-text {
+  width: 552px;
   margin: 19px 0;
 }
 
@@ -1150,7 +1172,8 @@ img {
 }
 
 .subscribe-input {
-  width: 525px;
+  width: 558px;
+  height: 100%;
   padding: 13px 17px 14px 17px;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
@@ -1158,6 +1181,7 @@ img {
   color: rgba(68, 68, 68, 0.5);
   background-color: transparent;
   border: none;
+  box-sizing: border-box;
 }
 
 .subscribe-input:not(:placeholder-shown) {
@@ -1176,8 +1200,8 @@ img {
 .input-border::after {
   content: "";
   position: absolute;
-  top: 54px;
-  left: 2px;
+  bottom: 0;
+  left: 1px;
   width: 557px;
   height: 3px;
   background-color: #C4C4C4;
@@ -1185,7 +1209,7 @@ img {
 
 .subscribe-button {
   width: 253px;
-  padding: 12px 29px 13px 33px;
+  padding: 15px 31px 15px 35px;
   border: 3px solid #C4C4C4;
 }
 
@@ -1210,6 +1234,7 @@ img {
 }
 
 .subscribe-information {
+  width: 160px;
   margin: 0;
   margin-top: 13px;
   padding-left: 32px;
@@ -1217,6 +1242,7 @@ img {
   background-size: 14px 14px;
   background-repeat: no-repeat;
   background-position: left top 9px;
+  box-sizing: border-box;
 }
 
 /*footer*/
